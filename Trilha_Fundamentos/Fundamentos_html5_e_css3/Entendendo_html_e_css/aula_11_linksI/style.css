@@ -1,0 +1,8 @@
+.exemplo {
+  margin: 0;
+  padding: 0;
+  min-width: 500px; /* min-*  ou max-* tem prioridade*/ 
+  width: 400px; /* nesse exemp. esse width ñ é aplicado*/
+  height: 400px;
+  background-color: aquamarine;
+}

@@ -1,0 +1,10 @@
+body {
+  margin: 0px;
+}
+
+.exemplo {
+
+  border: 10px solid blueviolet;
+  margin: 5px;
+  padding: 10px;
+}

@@ -1,0 +1,11 @@
+.link {
+  color: yellowgreen;
+  font-size: 18px;
+}
+
+.link:hover {
+  color: aquamarine;
+  font-size: 20px;
+  background-color:black;
+  color: white;
+}

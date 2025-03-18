@@ -1,0 +1,31 @@
+.solid {
+  background-color: rgb(200,0,200);
+  border: 5px solid rgb(103, 80, 236);
+
+}
+
+.dotted {
+  background-color: rgb(200,0,200);
+  border: 5px dotted rgb(12, 233, 233);
+
+}
+
+.dashed {
+  background-color: rgb(200,0,200);
+  border: 5px dashed rgb(12, 233, 67);
+
+}
+
+
+h2  {
+  background-color: #ff00ff;
+}
+
+.minhaDiv {
+  height: 200px;
+  width: 200px;
+  border: 5px solid darkblue;
+  border-radius: 50%;
+  background-color: burlywood;
+
+}
