@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
+    <title>Titulo</title>
+</head>
+
+<body>
+
+   <h2>Formulário de Exemplo</h2>
+   <hr>
+   <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br><br>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="exemplo@email.com"><br><br>
+
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" name="idade" min="0" max="120"><br><br>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha"><br><br>
+
+      <label>
+         <input type="checkbox" name="newsletter"> Receber novidades
+      </label><br><br>
+
+      <label for="genero">Gênero:</label>
+      <select id="genero" name="genero">
+         <option value="">Selecione</option>
+         <option value="masculino">Masculino</option>
+         <option value="feminino">Feminino</option>
+         <option value="outro">Outro</option>
+      </select><br><br>
+
+      <button type="submit">Enviar</button>
+   </form>
+
+   <style>
+      .tabela-estilizada {
+        border-collapse: collapse;
+        width: 400px;
+        margin-top: 20px;
+        font-family: Arial, sans-serif;
+        background: #f9f9f9;
+      }
+      .tabela-estilizada th, .tabela-estilizada td {
+        border: 1px solid #bbb;
+        padding: 10px 16px;
+        text-align: left;
+      }
+      .tabela-estilizada thead {
+        background: #0074D9;
+        color: #fff;
+      }
+      .tabela-estilizada tbody tr:nth-child(even) {
+        background: #e6f2ff;
+      }
+      .tabela-estilizada tbody tr:hover {
+        background: #d0eaff;
+      }
+      form {
+        margin-top: 30px;
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        padding: 20px;
+        border-radius: 8px;
+        width: 400px;
+      }
+      form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      form input, form select, form button {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      form button {
+        background: #0074D9;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      form button:hover {
+        background: #005fa3;
+      }
+   </style>
+    
+    <br><br>
+    <hr>
+    <footer>
+        Code by: <a href="https://github.com/phpablo">Pablo Henrique</a> &copy;
+    </footer>
+</body>
+
+</html>

@@ -15,7 +15,7 @@ HTML (HyperText Markup Language) é a linguagem de marcação utilizada para est
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
     <title>Minha Página</title>
 </head>
 <body>

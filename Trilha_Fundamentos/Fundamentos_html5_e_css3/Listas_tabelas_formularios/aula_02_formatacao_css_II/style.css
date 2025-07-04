@@ -1,0 +1,18 @@
+p {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  color: yellowgreen;
+  text-shadow: 0px 3px 2px yellowgreen;
+}
+
+a{
+  text-decoration: none;
+  color: chocolate;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: purple;
+}

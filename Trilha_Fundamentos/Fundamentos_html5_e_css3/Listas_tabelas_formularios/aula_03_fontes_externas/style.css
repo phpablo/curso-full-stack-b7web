@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+h2 {
+  font-family: 'Roboto';
+}
+p {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Montserrat';
+  text-align: justify;
+}
+
+a{
+  text-decoration: none;
+  color: chocolate;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: purple;
+}

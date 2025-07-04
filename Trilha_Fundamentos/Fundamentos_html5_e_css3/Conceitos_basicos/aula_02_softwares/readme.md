@@ -21,6 +21,6 @@
 
 ## 🔗 Versionamento  
 - [Git](https://git-scm.com/)  
-- [GitHub](https://github.com/)  
+- [Gitdub](https://gitdub.com/)  
 
 📌 **Dica**: Use extensões no VS Code como **Live Server** e **Prettier** para otimizar seu fluxo! 🚀  
