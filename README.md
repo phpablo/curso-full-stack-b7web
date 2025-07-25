@@ -1,5 +1,5 @@
 <!--Init Model-Structure readme-->
-##  <p align="center">💡Novo Repositório de Estudos e Projetos da B7Web 2025</p>
+##  <p align="center">💡Repositório de Estudos e Projetos do Curso de Full-Stack da B7Web </p>
 
 Bem-vindo ao meu repositório no Github! Aqui você encontrará os projetos e estudos relacionados aos cursos de Full-stack Developer que estou realizando na B7Web. Este espaço é dedicado ao compartilhamento e documentação do meu progresso.
 
