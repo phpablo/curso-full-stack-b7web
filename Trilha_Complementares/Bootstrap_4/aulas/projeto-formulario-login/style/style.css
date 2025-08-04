@@ -1,14 +1,36 @@
 body {
-  background-color: #EEEEEE;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
 
+/* === SECTION AREA DO FORMULARIO === */
 .area {
   width: 100%;
   max-width: 350px;
-  height: 350px;
-  background-color: yellowgreen;
+  text-align: center;
+  padding: 10px;
 }
+
+/* === AREA DO FORMULÁRIO ===  */
+.logo {
+  width: 100%;
+  height: 350px;
+}
+
+.remember {
+  padding-top: 20px;
+  padding-bottom:20px;
+}
+
+.gray {
+  color: #eee;
+}
+
+.padding {
+  padding: 20px;
+}
+
+
