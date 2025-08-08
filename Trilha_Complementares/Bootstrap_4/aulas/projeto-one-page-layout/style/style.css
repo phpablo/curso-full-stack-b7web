@@ -1,0 +1,16 @@
+.hero {
+  max-height: 500px;
+  height: 100vh;
+  background-color: yellowgreen;
+  background-image: url('../assets/images/hero-section.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
