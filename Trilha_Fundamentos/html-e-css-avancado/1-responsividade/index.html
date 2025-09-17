@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <!-- A tag meta viewport é crucial para que a responsividade funcione corretamente em dispositivos móveis. -->
+  <!-- 'width=device-width' faz a largura da página corresponder à largura da tela do dispositivo. -->
+  <!-- 'initial-scale=1.0' define o nível de zoom inicial quando a página é carregada pela primeira vez. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Media Queries</title>
+  <style>
+    /* --- ESTILOS BASE (Padrão para telas grandes / Desktop First) --- */
+    /* Estes estilos são aplicados por padrão, a menos que uma media query os sobrescreva. */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e0e0e0; /* Cor de fundo para telas grandes */
+      color: #333;
+      text-align: center;
+      transition: background-color 0.3s ease; /* Efeito suave na mudança de cor */
+    }
+
+    h1 {
+      color: darkcyan;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row; /* Em telas grandes, os itens ficam em linha */
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .box {
+      flex: 1; /* Distribui o espaço igualmente */
+      margin: 10px;
+      padding: 20px;
+      background-color: steelblue;
+      color: white;
+      border-radius: 8px;
+    }
+    /* --- USO DE VARIÁVEIS CSS (Custom Properties) --- */
+    /* As variáveis são definidas dentro de um seletor, geralmente :root para que sejam globais. */
+    :root {
+      --cor-fundo-principal: #e0e0e0;
+      --cor-titulo-principal: darkcyan;
+      --cor-fundo-caixa: steelblue;
+      --cor-texto-caixa: white;
+    }
+
+    /* Agora, usamos a função var() para aplicar os valores das variáveis. */
+    /* Isso torna a manutenção e a criação de temas mais fáceis. */
+    body {
+      background-color: var(--cor-fundo-principal);
+    }
+
+    h1 {
+      color: var(--cor-titulo-principal);
+    }
+
+    .box {
+      background-color: var(--cor-fundo-caixa);
+      color: var(--cor-texto-caixa);
+    }
+
+    /* --- MEDIA QUERIES --- */
+    /* Media queries permitem aplicar estilos CSS diferentes para diferentes tamanhos de tela (breakpoints). */
+
+    /* 1. Para telas de TABLET (largura máxima de 1024px) */
+    /* A regra '@media' inicia a consulta. 'screen' especifica o tipo de mídia. */
+    /* 'max-width: 1024px' significa que estes estilos serão aplicados em telas com largura de 1024 pixels ou menos. */
+    @media screen and (max-width: 1024px) {
+      body {
+        background-color: #d4e6f1; /* Altera a cor de fundo para tablets */
+      }
+
+      h1 {
+        color: darkslateblue;
+      }
+
+      .container {
+        /* Em tablets, os itens continuam em linha, mas podem ter ajustes. */
+        /* Nenhuma mudança aqui, então herda o estilo base. */
+      }
+
+      .box {
+        background-color: mediumseagreen; /* Altera a cor das caixas */
+      }
+    }
+
+    /* 2. Para telas de CELULAR (largura máxima de 600px) */
+    /* Este breakpoint é menor, então ele sobrescreve as regras do breakpoint de 1024px e as regras base quando a tela é <= 600px. */
+    @media screen and (max-width: 600px) {
+      body {
+        background-color: #fef9e7; /* Altera a cor de fundo para celulares */
+      }
+
+      h1 {
+        color: firebrick;
+        font-size: 1.5em; /* Diminui o tamanho da fonte do título */
+      }
+
+      .container {
+        flex-direction: column; /* Em telas pequenas, os itens ficam em coluna (um abaixo do outro) */
+        align-items: center;
+      }
+
+      .box {
+        background-color: coral; /* Altera a cor das caixas */
+        width: 90%; /* As caixas ocupam 90% da largura para não colarem nas bordas */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Exemplo de Responsividade com Media Queries</h1>
+  <p>Redimensione a janela do seu navegador para ver as mudanças de estilo.</p>
+
+  <div class="container">
+    <div class="box">
+      <h3>Caixa 1</h3>
+      <p>Conteúdo da caixa 1.</p>
+    </div>
+    <div class="box">
+      <h3>Caixa 2</h3>
+      <p>Conteúdo da caixa 2.</p>
+    </div>
+    <div class="box">
+      <h3>Caixa 3</h3>
+      <p>Conteúdo da caixa 3.</p>
+    </div>
+  </div>
+
+</body>
+</html>
