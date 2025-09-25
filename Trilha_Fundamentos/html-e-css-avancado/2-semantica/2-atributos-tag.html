@@ -1,351 +1,264 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atributos de Input HTML - Aulas Avançadas</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      line-height: 1.6;
-    }
-    .form-group {
-      margin-bottom: 20px;
-      padding: 15px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      background-color: #f9f9f9;
-    }
-    label {
-      display: block;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-    input {
-      padding: 8px;
-      margin: 5px 0;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-    }
-    .example-code {
-      background-color: #f4f4f4;
-      padding: 10px;
-      border-left: 4px solid #007acc;
-      margin: 10px 0;
-      font-family: monospace;
-    }
-    .highlight {
-      background-color: #fff3cd;
-      padding: 10px;
-      border-radius: 5px;
-      margin: 10px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos de Input - Estudo HTML</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- HEADER: Define o cabeçalho da página ou de uma seção. Geralmente contém o logo, título e navegação. -->
-  <header>
-    <h1>Atributos de Input HTML - Últimas Aulas</h1>
-    <p>Exemplos práticos dos atributos: <strong>placeholder</strong>, <strong>autofocus</strong>, <strong>size</strong>, <strong>maxlength</strong> e <strong>required</strong></p>
-    
-    <!-- NAV: Define uma seção de links de navegação. Ajuda na acessibilidade e SEO. -->
-    <nav>
-      <ul>
-        <li><a href="#placeholder">Placeholder</a></li>
-        <li><a href="#autofocus">Autofocus</a></li>
-        <li><a href="#size">Size</a></li>
-        <li><a href="#maxlength">Maxlength</a></li>
-        <li><a href="#required">Required</a></li>
-        <li><a href="#formulario-completo">Formulário Completo</a></li>
-      </ul>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <h2>📚 HTML E CSS AVANÇADO</h2>
+        <ul class="nav-menu">
+            <li><a href="#placeholder" class="nav-link">🏷️ Placeholder</a></li>
+            <li><a href="#autofocus" class="nav-link">🎯 Autofocus</a></li>
+            <li><a href="#size" class="nav-link">📏 Size</a></li>
+            <li><a href="#maxlength" class="nav-link">📐 Maxlength</a></li>
+            <li><a href="#required" class="nav-link">⚠️ Required</a></li>
+            <li><a href="#formulario-completo" class="nav-link">📋 Formulário Completo</a></li>
+            <li><a href="#resumo" class="nav-link">📊 Resumo</a></li>
+        </ul>
     </nav>
-  </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header class="header">
+            <h1>Atributos de Input HTML</h1>
+            <p>Explorando os principais atributos para melhorar a experiência do usuário em formulários</p>
+        </header>
 
   <!-- MAIN: Define o conteúdo principal e único do documento. O conteúdo dentro dele não deve se repetir em outras páginas. -->
   <main>
-    
-    <!-- SEÇÃO 1: PLACEHOLDER -->
-    <section id="placeholder">
-      <h2>1. Atributo <code>placeholder</code></h2>
-      <div class="highlight">
-        <p><strong>Função:</strong> Fornece uma dica visual sobre o que deve ser inserido no campo. O texto desaparece quando o usuário começa a digitar.</p>
-      </div>
-      
-      <div class="form-group">
-        <label for="nome-placeholder">Nome Completo:</label>
-        <input type="text" id="nome-placeholder" name="nome" placeholder="Digite seu nome completo aqui">
-        
-        <div class="example-code">
-          &lt;input type="text" placeholder="Digite seu nome completo aqui"&gt;
-        </div>
-      </div>
+        <!-- Placeholder Section -->
+        <section id="placeholder" class="section">
+            <div class="section-header">
+                <h2 class="section-title">🏷️ Placeholder</h2>
+                <p class="section-description">Fornece uma dica visual sobre o que deve ser inserido no campo</p>
+            </div>
+            <div class="section-content">
+                <div class="form-group">
+                    <label class="form-label" for="nome-placeholder">Nome completo:</label>
+                    <input type="text" id="nome-placeholder" placeholder="Digite seu nome completo" class="form-input">
+                </div>
+                
+                <div class="code-example">&lt;input type="text" placeholder="Digite seu nome completo"&gt;</div>
+                
+                <div class="attribute-info">
+                    <strong>💡 Dica:</strong> O placeholder desaparece quando o usuário começa a digitar e não substitui o label.
+                </div>
+            </div>
+        </section>
 
-      <div class="form-group">
-        <label for="email-placeholder">E-mail:</label>
-        <input type="email" id="email-placeholder" name="email" placeholder="exemplo@email.com">
-        
-        <div class="example-code">
-          &lt;input type="email" placeholder="exemplo@email.com"&gt;
-        </div>
-      </div>
-    </section>
+        <!-- Autofocus Section -->
+        <section id="autofocus" class="section">
+            <div class="section-header">
+                <h2 class="section-title">🎯 Autofocus</h2>
+                <p class="section-description">Foca automaticamente no campo quando a página carrega</p>
+            </div>
+            <div class="section-content">
+                <div class="form-group">
+                    <label class="form-label" for="email-autofocus">E-mail:</label>
+                    <input type="email" id="email-autofocus" autofocus placeholder="seu@email.com" class="form-input">
+                </div>
+                
+                <div class="code-example">&lt;input type="email" autofocus placeholder="seu@email.com"&gt;</div>
+                
+                <div class="attribute-info">
+                    <strong>⚠️ Atenção:</strong> Use apenas um autofocus por página para não confundir o usuário.
+                </div>
+            </div>
+        </section>
 
-    <!-- SEÇÃO 6: FORMULÁRIO COMPLETO COM TODOS OS ATRIBUTOS -->
-    <section id="formulario-completo">
-      <h2>6. Formulário Completo - Combinando Todos os Atributos</h2>
-      <div class="highlight">
-        <p><strong>Exemplo Prático:</strong> Um formulário de cadastro que utiliza todos os atributos aprendidos.</p>
-      </div>
-      
-      <form action="#" method="post">
-        <div class="form-group">
-          <h3>Dados Pessoais</h3>
-          
-          <label for="nome-completo">Nome Completo:</label>
-          <input type="text" 
-                 id="nome-completo" 
-                 name="nome" 
-                 placeholder="Digite seu nome completo" 
-                 size="40" 
-                 maxlength="50" 
-                 required 
-                 autofocus>
-          
-          <label for="email-cadastro">E-mail:</label>
-          <input type="email" 
-                 id="email-cadastro" 
-                 name="email" 
-                 placeholder="seu.email@exemplo.com" 
-                 size="35" 
-                 maxlength="100" 
-                 required>
-          
-          <label for="usuario-cadastro">Nome de Usuário:</label>
-          <input type="text" 
-                 id="usuario-cadastro" 
-                 name="usuario" 
-                 placeholder="Escolha um nome de usuário" 
-                 size="20" 
-                 maxlength="20" 
-                 required>
-          
-          <label for="senha-cadastro">Senha:</label>
-          <input type="password" 
-                 id="senha-cadastro" 
-                 name="senha" 
-                 placeholder="Mínimo 8 caracteres" 
-                 size="25" 
-                 maxlength="30" 
-                 required>
-          
-          <label for="telefone-cadastro">Telefone (opcional):</label>
-          <input type="tel" 
-                 id="telefone-cadastro" 
-                 name="telefone" 
-                 placeholder="(11) 99999-9999" 
-                 size="20" 
-                 maxlength="15">
-          
-          <label for="bio">Biografia (opcional):</label>
-          <input type="text" 
-                 id="bio" 
-                 name="bio" 
-                 placeholder="Conte um pouco sobre você..." 
-                 size="60" 
-                 maxlength="200">
-        </div>
-        
-        <div class="form-group">
-          <h3>Código HTML do Formulário:</h3>
-          <div class="example-code">
-&lt;input type="text" 
-       placeholder="Digite seu nome completo" 
-       size="40" 
-       maxlength="50" 
-       required 
-       autofocus&gt;
+        <!-- Size Section -->
+        <section id="size" class="section">
+            <div class="section-header">
+                <h2 class="section-title">📏 Size</h2>
+                <p class="section-description">Define a largura visual do campo em caracteres</p>
+            </div>
+            <div class="section-content">
+                <div class="form-group">
+                    <label class="form-label" for="codigo-size">Código (4 dígitos):</label>
+                    <input type="text" id="codigo-size" size="4" maxlength="4" placeholder="0000" class="form-input">
+                </div>
+                
+                <div class="code-example">&lt;input type="text" size="4" maxlength="4" placeholder="0000"&gt;</div>
+                
+                <div class="attribute-info">
+                    <strong>📝 Nota:</strong> O size define apenas a largura visual, não limita a quantidade de caracteres.
+                </div>
+            </div>
+        </section>
 
-&lt;input type="email" 
-       placeholder="seu.email@exemplo.com" 
-       size="35" 
-       maxlength="100" 
-       required&gt;
+        <!-- Maxlength Section -->
+        <section id="maxlength" class="section">
+            <div class="section-header">
+                <h2 class="section-title">📐 Maxlength</h2>
+                <p class="section-description">Limita o número máximo de caracteres que podem ser digitados</p>
+            </div>
+            <div class="section-content">
+                <div class="form-group">
+                    <label class="form-label" for="usuario-maxlength">Nome de usuário (máx. 15 caracteres):</label>
+                    <input type="text" id="usuario-maxlength" maxlength="15" placeholder="usuario123" class="form-input">
+                </div>
+                
+                <div class="code-example">&lt;input type="text" maxlength="15" placeholder="usuario123"&gt;</div>
+                
+                <div class="attribute-info">
+                    <strong>✅ Benefício:</strong> Evita que o usuário digite mais do que o permitido, melhorando a UX.
+                </div>
+            </div>
+        </section>
 
-&lt;input type="text" 
-       placeholder="Escolha um nome de usuário" 
-       size="20" 
-       maxlength="20" 
-       required&gt;
-          </div>
-        </div>
-        
-        <div class="form-group">
-          <input type="submit" value="Cadastrar" style="background-color: #007acc; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
-          <input type="reset" value="Limpar Formulário" style="background-color: #dc3545; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-left: 10px;">
-        </div>
-      </form>
-    </section>
+        <!-- Required Section -->
+        <section id="required" class="section">
+            <div class="section-header">
+                <h2 class="section-title">⚠️ Required</h2>
+                <p class="section-description">Torna o preenchimento do campo obrigatório</p>
+            </div>
+            <div class="section-content">
+                <form>
+                    <div class="form-group">
+                        <label class="form-label" for="nome-required">Nome completo (obrigatório):</label>
+                        <input type="text" id="nome-required" required placeholder="Digite seu nome" class="form-input">
+                    </div>
+                    
+                    <button type="submit" style="background: #667eea; color: white; padding: 0.8rem 1.5rem; border: none; border-radius: 8px; cursor: pointer;">Enviar</button>
+                </form>
+                
+                <div class="code-example">&lt;input type="text" required placeholder="Digite seu nome"&gt;</div>
+                
+                <div class="attribute-info">
+                    <strong>🔒 Validação:</strong> O navegador impede o envio do formulário se campos required estiverem vazios.
+                </div>
+            </div>
+        </section>
 
-    <!-- RESUMO DOS ATRIBUTOS -->
-    <section style="background-color: #e9ecef; padding: 20px; border-radius: 10px; margin-top: 30px;">
-      <h2>📋 Resumo dos Atributos</h2>
-      <table style="width: 100%; border-collapse: collapse;">
-        <thead>
-          <tr style="background-color: #007acc; color: white;">
-            <th style="padding: 10px; border: 1px solid #ddd;">Atributo</th>
-            <th style="padding: 10px; border: 1px solid #ddd;">Função</th>
-            <th style="padding: 10px; border: 1px solid #ddd;">Exemplo</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>placeholder</code></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Texto de dica no campo</td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>placeholder="Digite aqui"</code></td>
-          </tr>
-          <tr style="background-color: #f8f9fa;">
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>autofocus</code></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Foco automático no campo</td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>autofocus</code></td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>size</code></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Largura visual do campo</td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>size="30"</code></td>
-          </tr>
-          <tr style="background-color: #f8f9fa;">
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>maxlength</code></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Limite máximo de caracteres</td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>maxlength="50"</code></td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>required</code></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Campo obrigatório</td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><code>required</code></td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-  </main>
+        <!-- Complete Form Section -->
+        <section id="formulario-completo" class="section">
+            <div class="section-header">
+                <h2 class="section-title">📋 Formulário Completo</h2>
+                <p class="section-description">Exemplo prático combinando todos os atributos estudados</p>
+            </div>
+            <div class="section-content">
+                <form>
+                    <div class="form-group">
+                        <label class="form-label" for="nome-completo">Nome Completo:</label>
+                        <input type="text" id="nome-completo" required autofocus placeholder="Digite seu nome completo" maxlength="50" class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="email-completo">E-mail:</label>
+                        <input type="email" id="email-completo" required placeholder="seu@email.com" class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="telefone-completo">Telefone:</label>
+                        <input type="tel" id="telefone-completo" size="15" placeholder="(11) 99999-9999" maxlength="15" class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="codigo-completo">Código de Verificação:</label>
+                        <input type="text" id="codigo-completo" required size="6" maxlength="6" placeholder="000000" class="form-input">
+                    </div>
+                    
+                    <button type="submit" style="background: #667eea; color: white; padding: 0.8rem 2rem; border: none; border-radius: 8px; cursor: pointer; font-size: 1rem;">Enviar Formulário</button>
+                </form>
+            </div>
+        </section>
 
-  <!-- FOOTER: Define o rodapé da página ou de uma seção. Geralmente contém informações de copyright, contato e links relacionados. -->
-  <footer style="margin-top: 40px; padding: 20px; background-color: #343a40; color: white; text-align: center;">
-    <p>&copy; 2024 - Aulas de HTML Avançado - Atributos de Input</p>
-    <p><a href="#top" style="color: #007acc;">Voltar ao topo</a></p>
-  </footer>
+        <!-- Summary Section -->
+        <section id="resumo" class="section">
+            <div class="section-header">
+                <h2 class="section-title">📊 Resumo dos Atributos</h2>
+                <p class="section-description">Tabela de referência rápida dos atributos estudados</p>
+            </div>
+            <div class="section-content">
+                <table class="summary-table">
+                    <thead>
+                        <tr>
+                            <th>Atributo</th>
+                            <th>Função</th>
+                            <th>Exemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>placeholder</strong></td>
+                            <td>Dica visual no campo</td>
+                            <td>placeholder="Digite aqui"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>autofocus</strong></td>
+                            <td>Foco automático</td>
+                            <td>autofocus</td>
+                        </tr>
+                        <tr>
+                            <td><strong>size</strong></td>
+                            <td>Largura visual</td>
+                            <td>size="10"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>maxlength</strong></td>
+                            <td>Limite de caracteres</td>
+                            <td>maxlength="50"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>required</strong></td>
+                            <td>Campo obrigatório</td>
+                            <td>required</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+  
+
+
+
+    <footer class="footer">
+        <p>📚 Arquivo de Estudos HTML - Atributos de Input</p>
+        <p>Estrutura reutilizável para próximos temas</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</div>
 
 </body>
 </html>
-
-    <!-- SEÇÃO 2: AUTOFOCUS -->
-    <section id="autofocus">
-      <h2>2. Atributo <code>autofocus</code></h2>
-      <div class="highlight">
-        <p><strong>Função:</strong> Foca automaticamente no campo quando a página carrega. Apenas um elemento por página deve ter este atributo.</p>
-      </div>
-      
-      <div class="form-group">
-        <label for="campo-foco">Campo com Foco Automático:</label>
-        <input type="text" id="campo-foco" name="foco" placeholder="Este campo recebe foco automaticamente" autofocus>
-        
-        <div class="example-code">
-          &lt;input type="text" autofocus&gt;
-        </div>
-        
-        <p><em>💡 Dica: Recarregue a página para ver o efeito do autofocus!</em></p>
-      </div>
-    </section>
-
-    <hr>
-
-    <!-- SEÇÃO 3: SIZE -->
-    <section id="size">
-      <h2>3. Atributo <code>size</code></h2>
-      <div class="highlight">
-        <p><strong>Função:</strong> Define a largura visual do campo em caracteres. Não limita a quantidade de texto que pode ser digitada.</p>
-      </div>
-      
-      <div class="form-group">
-        <label for="campo-pequeno">Campo Pequeno (size="10"):</label>
-        <input type="text" id="campo-pequeno" name="pequeno" size="10" placeholder="Pequeno">
-        
-        <label for="campo-medio">Campo Médio (size="30"):</label>
-        <input type="text" id="campo-medio" name="medio" size="30" placeholder="Campo de tamanho médio">
-        
-        <label for="campo-grande">Campo Grande (size="50"):</label>
-        <input type="text" id="campo-grande" name="grande" size="50" placeholder="Campo de tamanho grande para textos longos">
-        
-        <div class="example-code">
-          &lt;input type="text" size="10"&gt; &lt;!-- Pequeno --&gt;<br>
-          &lt;input type="text" size="30"&gt; &lt;!-- Médio --&gt;<br>
-          &lt;input type="text" size="50"&gt; &lt;!-- Grande --&gt;
-        </div>
-      </div>
-    </section>
-
-    <hr>
-
-    <!-- SEÇÃO 4: MAXLENGTH -->
-    <section id="maxlength">
-      <h2>4. Atributo <code>maxlength</code></h2>
-      <div class="highlight">
-        <p><strong>Função:</strong> Limita o número máximo de caracteres que podem ser digitados no campo.</p>
-      </div>
-      
-      <div class="form-group">
-        <label for="usuario">Nome de Usuário (máximo 15 caracteres):</label>
-        <input type="text" id="usuario" name="usuario" maxlength="15" placeholder="Máx. 15 caracteres">
-        
-        <label for="senha-curta">Senha (máximo 8 caracteres):</label>
-        <input type="password" id="senha-curta" name="senha" maxlength="8" placeholder="Máx. 8 caracteres">
-        
-        <label for="comentario">Comentário (máximo 100 caracteres):</label>
-        <input type="text" id="comentario" name="comentario" maxlength="100" size="50" placeholder="Escreva seu comentário aqui (máx. 100 caracteres)">
-        
-        <div class="example-code">
-          &lt;input type="text" maxlength="15"&gt; &lt;!-- Máx. 15 caracteres --&gt;<br>
-          &lt;input type="password" maxlength="8"&gt; &lt;!-- Máx. 8 caracteres --&gt;<br>
-          &lt;input type="text" maxlength="100"&gt; &lt;!-- Máx. 100 caracteres --&gt;
-        </div>
-        
-        <p><em>💡 Tente digitar mais caracteres do que o permitido!</em></p>
-      </div>
-    </section>
-
-    <hr>
-
-    <!-- SEÇÃO 5: REQUIRED -->
-    <section id="required">
-      <h2>5. Atributo <code>required</code></h2>
-      <div class="highlight">
-        <p><strong>Função:</strong> Torna o preenchimento do campo obrigatório. O formulário não será enviado se campos obrigatórios estiverem vazios.</p>
-      </div>
-      
-      <form action="#" method="post">
-        <div class="form-group">
-          <label for="nome-obrigatorio">Nome Completo (obrigatório):</label>
-          <input type="text" id="nome-obrigatorio" name="nome" placeholder="Campo obrigatório" required>
-          
-          <label for="email-obrigatorio">E-mail (obrigatório):</label>
-          <input type="email" id="email-obrigatorio" name="email" placeholder="seu@email.com" required>
-          
-          <label for="telefone-opcional">Telefone (opcional):</label>
-          <input type="tel" id="telefone-opcional" name="telefone" placeholder="(11) 99999-9999">
-          
-          <div class="example-code">
-            &lt;input type="text" required&gt; &lt;!-- Campo obrigatório --&gt;<br>
-            &lt;input type="email" required&gt; &lt;!-- E-mail obrigatório --&gt;<br>
-            &lt;input type="tel"&gt; &lt;!-- Campo opcional --&gt;
-          </div>
-          
-          <p><em>💡 Tente enviar o formulário sem preencher os campos obrigatórios!</em></p>
-          <input type="submit" value="Testar Validação">
-        </div>
-      </form>
-    </section>
-
-    <hr>
