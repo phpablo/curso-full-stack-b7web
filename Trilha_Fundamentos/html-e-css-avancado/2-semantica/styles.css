@@ -15,6 +15,162 @@ body {
     font-weight: 400;
     letter-spacing: 0.025em;
 }
+@keyframes animacao1 {
+    0% {
+        background-color: #03045e;
+    }
+    50% {
+        background-color: #1bb600;
+    }
+    100% {
+        background-color: #03045e;
+    }
+}
+@keyframes animacao2 {
+    0% {
+       background-color: #03045e;
+    }
+    50% {
+        background-color: #b6005b;
+    }
+    100% {
+        background-color: #03045e;
+    }
+}
+@keyframes animacao3 {
+    0% {
+        background-color: #03045e;
+    }
+    50% {
+        background-color: #b69200;
+    }
+    100% {
+        background-color: #03045e;  
+    }
+}
+/* start animacao strutcture  */
+.animacao {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#animacao1 {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #03045e;
+    animation-name: animacao1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#animacao2 {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #03045e;
+    animation-name: animacao2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#animacao3 {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #03045e;
+    animation-name: animacao3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* end linear gradient strutcture  */
+/* start linear gradient strutcture  */
+.lineargradient {
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+#lineargradient1 {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(#0077b6,#03045e);
+}
+#lineargradient2 {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(90deg,#0077b6,#03045e);
+
+    
+}
+#lineargradient3 {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(45deg,#0077b6,#03045e);
+
+    
+}
+
+/* end linear gradient strutcture  */
+
+
+
+
+#radiusAll {
+    height: 100px;
+    width: 100px;
+    background-color: #10b981;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#radiusRight {
+    height: 100px;
+    width: 100px;
+    background-color: #10b981;
+    margin: 5px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#radiusLeft {
+    height: 100px;
+    width: 100px;
+    background-color: #10b981;
+    margin: 5px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.divRadius {
+    display: flex;
+    flex-wrap: nowrap;
+}
 
 /* Sidebar Navigation */
 .sidebar {
@@ -446,21 +602,21 @@ body {
         padding-left: 0;
         padding-top: 60px;
     }
-    
+
     .sidebar {
         transform: translateX(-100%);
         transition: transform 0.3s ease;
         width: 280px;
     }
-    
+
     .sidebar.active {
         transform: translateX(0);
     }
-    
+
     .header h1 {
         font-size: 2rem;
     }
-    
+
     .section {
         margin: 1rem;
         padding: 1.5rem;
@@ -483,18 +639,19 @@ body {
 .glow-effect:hover {
     box-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
 }
-    
-    .main-content {
-        padding: 1rem;
-    }
-    
-    .header h1 {
-        font-size: 2rem;
-    }
-    
-    .section-content {
-        padding: 1.5rem;
-    }
+
+.main-content {
+    padding: 1rem;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+.section-content {
+    padding: 1.5rem;
+}
+
 /* Remove the extra closing brace as it has no matching opening brace */
 
 /* Smooth Scrolling */

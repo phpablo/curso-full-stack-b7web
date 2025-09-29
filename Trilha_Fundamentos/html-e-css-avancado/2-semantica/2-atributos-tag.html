@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atributos de Input - Estudo HTML</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Sidebar Navigation -->
     <nav class="sidebar">
         <h2>📚 HTML E CSS AVANÇADO</h2>
         <ul class="nav-menu">
+            <li><a href="#animacao" class="nav-link">📋Animação</a></li>
+            <li><a href="#lineargradient" class="nav-link">📋Linear Gradient</a></li>
+            <li><a href="#borderradius" class="nav-link">📋Border Radius</a></li>
             <li><a href="#placeholder" class="nav-link">🏷️ Placeholder</a></li>
             <li><a href="#autofocus" class="nav-link">🎯 Autofocus</a></li>
             <li><a href="#size" class="nav-link">📏 Size</a></li>
@@ -28,237 +33,360 @@
             <p>Explorando os principais atributos para melhorar a experiência do usuário em formulários</p>
         </header>
 
-  <!-- MAIN: Define o conteúdo principal e único do documento. O conteúdo dentro dele não deve se repetir em outras páginas. -->
-  <main>
-        <!-- Placeholder Section -->
-        <section id="placeholder" class="section">
-            <div class="section-header">
-                <h2 class="section-title">🏷️ Placeholder</h2>
-                <p class="section-description">Fornece uma dica visual sobre o que deve ser inserido no campo</p>
-            </div>
-            <div class="section-content">
-                <div class="form-group">
-                    <label class="form-label" for="nome-placeholder">Nome completo:</label>
-                    <input type="text" id="nome-placeholder" placeholder="Digite seu nome completo" class="form-input">
-                </div>
-                
-                <div class="code-example">&lt;input type="text" placeholder="Digite seu nome completo"&gt;</div>
-                
-                <div class="attribute-info">
-                    <strong>💡 Dica:</strong> O placeholder desaparece quando o usuário começa a digitar e não substitui o label.
-                </div>
-            </div>
-        </section>
+        <!-- MAIN: Define o conteúdo principal e único do documento. O conteúdo dentro dele não deve se repetir em outras páginas. -->
+        <main>
 
-        <!-- Autofocus Section -->
-        <section id="autofocus" class="section">
-            <div class="section-header">
-                <h2 class="section-title">🎯 Autofocus</h2>
-                <p class="section-description">Foca automaticamente no campo quando a página carrega</p>
-            </div>
-            <div class="section-content">
-                <div class="form-group">
-                    <label class="form-label" for="email-autofocus">E-mail:</label>
-                    <input type="email" id="email-autofocus" autofocus placeholder="seu@email.com" class="form-input">
+            <!-- animacao Section -->
+            <section id="animacao" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">🏷️Animação</h2>
+                    <p class="section-description">Cria animação no elemento</p>
                 </div>
-                
-                <div class="code-example">&lt;input type="email" autofocus placeholder="seu@email.com"&gt;</div>
-                
-                <div class="attribute-info">
-                    <strong>⚠️ Atenção:</strong> Use apenas um autofocus por página para não confundir o usuário.
-                </div>
-            </div>
-        </section>
-
-        <!-- Size Section -->
-        <section id="size" class="section">
-            <div class="section-header">
-                <h2 class="section-title">📏 Size</h2>
-                <p class="section-description">Define a largura visual do campo em caracteres</p>
-            </div>
-            <div class="section-content">
-                <div class="form-group">
-                    <label class="form-label" for="codigo-size">Código (4 dígitos):</label>
-                    <input type="text" id="codigo-size" size="4" maxlength="4" placeholder="0000" class="form-input">
-                </div>
-                
-                <div class="code-example">&lt;input type="text" size="4" maxlength="4" placeholder="0000"&gt;</div>
-                
-                <div class="attribute-info">
-                    <strong>📝 Nota:</strong> O size define apenas a largura visual, não limita a quantidade de caracteres.
-                </div>
-            </div>
-        </section>
-
-        <!-- Maxlength Section -->
-        <section id="maxlength" class="section">
-            <div class="section-header">
-                <h2 class="section-title">📐 Maxlength</h2>
-                <p class="section-description">Limita o número máximo de caracteres que podem ser digitados</p>
-            </div>
-            <div class="section-content">
-                <div class="form-group">
-                    <label class="form-label" for="usuario-maxlength">Nome de usuário (máx. 15 caracteres):</label>
-                    <input type="text" id="usuario-maxlength" maxlength="15" placeholder="usuario123" class="form-input">
-                </div>
-                
-                <div class="code-example">&lt;input type="text" maxlength="15" placeholder="usuario123"&gt;</div>
-                
-                <div class="attribute-info">
-                    <strong>✅ Benefício:</strong> Evita que o usuário digite mais do que o permitido, melhorando a UX.
-                </div>
-            </div>
-        </section>
-
-        <!-- Required Section -->
-        <section id="required" class="section">
-            <div class="section-header">
-                <h2 class="section-title">⚠️ Required</h2>
-                <p class="section-description">Torna o preenchimento do campo obrigatório</p>
-            </div>
-            <div class="section-content">
-                <form>
-                    <div class="form-group">
-                        <label class="form-label" for="nome-required">Nome completo (obrigatório):</label>
-                        <input type="text" id="nome-required" required placeholder="Digite seu nome" class="form-input">
+                <div class="section-content">
+                        <div class="animacao">
+                            <div id="animacao1">
+                                Animação 1
+                            </div>
+                            <div id="animacao2">
+                                Animação 2
+                            </div>
+                            <div id="animacao3">
+                                Animação 3
+                            </div>
+                        </div>
+                    <div class="code-example">Cria uma animação que muda de cor o fundo<br>
+                    Exemplo: @keyframes animacao1 {<br>
+                        0% {
+                            background-color: #03045e;
+                        }
+                        50% {
+                            background-color: #1bb600;
+                        }
+                        100% {
+                            background-color: #03045e;
+                        }
+                    }
                     </div>
-                    
-                    <button type="submit" style="background: #667eea; color: white; padding: 0.8rem 1.5rem; border: none; border-radius: 8px; cursor: pointer;">Enviar</button>
-                </form>
-                
-                <div class="code-example">&lt;input type="text" required placeholder="Digite seu nome"&gt;</div>
-                
-                <div class="attribute-info">
-                    <strong>🔒 Validação:</strong> O navegador impede o envio do formulário se campos required estiverem vazios.
+
+                    <div class="attribute-info">
+                        <strong>💡 Dica:</strong> 
+                        A animação funciona em vários elementos como div's, inputs, imagens e outros.
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Complete Form Section -->
-        <section id="formulario-completo" class="section">
-            <div class="section-header">
-                <h2 class="section-title">📋 Formulário Completo</h2>
-                <p class="section-description">Exemplo prático combinando todos os atributos estudados</p>
-            </div>
-            <div class="section-content">
-                <form>
-                    <div class="form-group">
-                        <label class="form-label" for="nome-completo">Nome Completo:</label>
-                        <input type="text" id="nome-completo" required autofocus placeholder="Digite seu nome completo" maxlength="50" class="form-input">
+            </section>
+            <!-- Linear gradient Section -->
+            <section id="lineargradient" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">🏷️Linear Gradient</h2>
+                    <p class="section-description">Cria background em gradiente linear ( colocar graus tbm muda a direção )</p>
+                </div>
+                <div class="section-content">
+                        <div class="lineargradient">
+                            <div id="lineargradient1">
+                                Linear Gradient
+                            </div>
+                            <div id="lineargradient2">
+                                Gradient 90 graus
+                            </div>
+                            <div id="lineargradient3">
+                                Gradient 45 graus
+                            </div>
+                        </div>
+                    <div class="code-example">Criar degradê de background. A fórmula é <br>background:linear-gradient(graus,cor1,cor2)<br>
+                    Exemplo: background: linear-gradient(45deg,#0077b6,#03045e);
                     </div>
-                    
-                    <div class="form-group">
-                        <label class="form-label" for="email-completo">E-mail:</label>
-                        <input type="email" id="email-completo" required placeholder="seu@email.com" class="form-input">
+
+                    <div class="attribute-info">
+                        <strong>💡 Dica:</strong> 
+                        Funciona em vários elementos como div's, inputs, imagens e outros.
                     </div>
-                    
-                    <div class="form-group">
-                        <label class="form-label" for="telefone-completo">Telefone:</label>
-                        <input type="tel" id="telefone-completo" size="15" placeholder="(11) 99999-9999" maxlength="15" class="form-input">
+                </div>
+            </section>
+
+            <!-- border radius Section -->
+            <section id="borderradius" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">🏷️Border Radius</h2>
+                    <p class="section-description">Deixa as bordas arredondadas de qualquer ( ou quase) elemento</p>
+                </div>
+                <div class="section-content">
+                        <div class="divRadius">
+                            <div id="radiusAll">
+                                Todas as bordas
+                            </div>
+                            <div id="radiusRight">
+                                Borda direita
+                            </div>
+                            <div id="radiusLeft">
+                                Borda Esquerda
+                            </div>
+                        </div>
+                    <div class="code-example">&lt;Comando border-radius vale para todos os lados do elemento. A fórmula é <br> &ltborder-eixos(x e y)-radius&gt "&gt;<br>
+                    Exemplo: &ltborder-top-right-radius:10px;&gt;
                     </div>
-                    
-                    <div class="form-group">
-                        <label class="form-label" for="codigo-completo">Código de Verificação:</label>
-                        <input type="text" id="codigo-completo" required size="6" maxlength="6" placeholder="000000" class="form-input">
+
+                    <div class="attribute-info">
+                        <strong>💡 Dica:</strong> 
+                        Funciona em vários elementos como div's, inputs, imagens e outros.
                     </div>
-                    
-                    <button type="submit" style="background: #667eea; color: white; padding: 0.8rem 2rem; border: none; border-radius: 8px; cursor: pointer; font-size: 1rem;">Enviar Formulário</button>
-                </form>
-            </div>
-        </section>
+                </div>
+            </section>
 
-        <!-- Summary Section -->
-        <section id="resumo" class="section">
-            <div class="section-header">
-                <h2 class="section-title">📊 Resumo dos Atributos</h2>
-                <p class="section-description">Tabela de referência rápida dos atributos estudados</p>
-            </div>
-            <div class="section-content">
-                <table class="summary-table">
-                    <thead>
-                        <tr>
-                            <th>Atributo</th>
-                            <th>Função</th>
-                            <th>Exemplo</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>placeholder</strong></td>
-                            <td>Dica visual no campo</td>
-                            <td>placeholder="Digite aqui"</td>
-                        </tr>
-                        <tr>
-                            <td><strong>autofocus</strong></td>
-                            <td>Foco automático</td>
-                            <td>autofocus</td>
-                        </tr>
-                        <tr>
-                            <td><strong>size</strong></td>
-                            <td>Largura visual</td>
-                            <td>size="10"</td>
-                        </tr>
-                        <tr>
-                            <td><strong>maxlength</strong></td>
-                            <td>Limite de caracteres</td>
-                            <td>maxlength="50"</td>
-                        </tr>
-                        <tr>
-                            <td><strong>required</strong></td>
-                            <td>Campo obrigatório</td>
-                            <td>required</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-    </main>
+            <!-- Placeholder Section -->
+            <section id="placeholder" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">🏷️ Placeholder</h2>
+                    <p class="section-description">Fornece uma dica visual sobre o que deve ser inserido no campo</p>
+                </div>
+                <div class="section-content">
+                    <div class="form-group">
+                        <label class="form-label" for="nome-placeholder">Nome completo:</label>
+                        <input type="text" id="nome-placeholder" placeholder="Digite seu nome completo"
+                            class="form-input">
+                    </div>
 
-  
+                    <div class="code-example">&lt;input type="text" placeholder="Digite seu nome completo"&gt;</div>
+
+                    <div class="attribute-info">
+                        <strong>💡 Dica:</strong> O placeholder desaparece quando o usuário começa a digitar e não
+                        substitui o label.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Autofocus Section -->
+            <section id="autofocus" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">🎯 Autofocus</h2>
+                    <p class="section-description">Foca automaticamente no campo quando a página carrega</p>
+                </div>
+                <div class="section-content">
+                    <div class="form-group">
+                        <label class="form-label" for="email-autofocus">E-mail:</label>
+                        <input type="email" id="email-autofocus" placeholder="seu@email.com" class="form-input">
+                    </div>
+
+                    <div class="code-example">&lt;input type="email" autofocus placeholder="seu@email.com"&gt;</div>
+
+                    <div class="attribute-info">
+                        <strong>⚠️ Atenção:</strong> Use apenas um autofocus por página para não confundir o usuário.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Size Section -->
+            <section id="size" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">📏 Size</h2>
+                    <p class="section-description">Define a largura visual do campo em caracteres</p>
+                </div>
+                <div class="section-content">
+                    <div class="form-group">
+                        <label class="form-label" for="codigo-size">Código (4 dígitos):</label>
+                        <input type="text" id="codigo-size" size="4" maxlength="4" placeholder="0000"
+                            class="form-input">
+                    </div>
+
+                    <div class="code-example">&lt;input type="text" size="4" maxlength="4" placeholder="0000"&gt;</div>
+
+                    <div class="attribute-info">
+                        <strong>📝 Nota:</strong> O size define apenas a largura visual, não limita a quantidade de
+                        caracteres.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Maxlength Section -->
+            <section id="maxlength" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">📐 Maxlength</h2>
+                    <p class="section-description">Limita o número máximo de caracteres que podem ser digitados</p>
+                </div>
+                <div class="section-content">
+                    <div class="form-group">
+                        <label class="form-label" for="usuario-maxlength">Nome de usuário (máx. 15 caracteres):</label>
+                        <input type="text" id="usuario-maxlength" maxlength="15" placeholder="usuario123"
+                            class="form-input">
+                    </div>
+
+                    <div class="code-example">&lt;input type="text" maxlength="15" placeholder="usuario123"&gt;</div>
+
+                    <div class="attribute-info">
+                        <strong>✅ Benefício:</strong> Evita que o usuário digite mais do que o permitido, melhorando a
+                        UX.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Required Section -->
+            <section id="required" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">⚠️ Required</h2>
+                    <p class="section-description">Torna o preenchimento do campo obrigatório</p>
+                </div>
+                <div class="section-content">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label" for="nome-required">Nome completo (obrigatório):</label>
+                            <input type="text" id="nome-required" required placeholder="Digite seu nome"
+                                class="form-input">
+                        </div>
+
+                        <button type="submit"
+                            style="background: #667eea; color: white; padding: 0.8rem 1.5rem; border: none; border-radius: 8px; cursor: pointer;">Enviar</button>
+                    </form>
+
+                    <div class="code-example">&lt;input type="text" required placeholder="Digite seu nome"&gt;</div>
+
+                    <div class="attribute-info">
+                        <strong>🔒 Validação:</strong> O navegador impede o envio do formulário se campos required
+                        estiverem vazios.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Complete Form Section -->
+            <section id="formulario-completo" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">📋 Formulário Completo</h2>
+                    <p class="section-description">Exemplo prático combinando todos os atributos estudados</p>
+                </div>
+                <div class="section-content">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label" for="nome-completo">Nome Completo:</label>
+                            <input type="text" id="nome-completo" required 
+                                placeholder="Digite seu nome completo" maxlength="50" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="email-completo">E-mail:</label>
+                            <input type="email" id="email-completo" required placeholder="seu@email.com"
+                                class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="telefone-completo">Telefone:</label>
+                            <input type="tel" id="telefone-completo" size="15" placeholder="(11) 99999-9999"
+                                maxlength="15" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="codigo-completo">Código de Verificação:</label>
+                            <input type="text" id="codigo-completo" required size="6" maxlength="6" placeholder="000000"
+                                class="form-input">
+                        </div>
+
+                        <button type="submit"
+                            style="background: #667eea; color: white; padding: 0.8rem 2rem; border: none; border-radius: 8px; cursor: pointer; font-size: 1rem;">Enviar
+                            Formulário</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Summary Section -->
+            <section id="resumo" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">📊 Resumo dos Atributos</h2>
+                    <p class="section-description">Tabela de referência rápida dos atributos estudados</p>
+                </div>
+                <div class="section-content">
+                    <table class="summary-table">
+                        <thead>
+                            <tr>
+                                <th>Atributo</th>
+                                <th>Função</th>
+                                <th>Exemplo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>placeholder</strong></td>
+                                <td>Dica visual no campo</td>
+                                <td>placeholder="Digite aqui"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>autofocus</strong></td>
+                                <td>Foco automático</td>
+                                <td>autofocus</td>
+                            </tr>
+                            <tr>
+                                <td><strong>size</strong></td>
+                                <td>Largura visual</td>
+                                <td>size="10"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>maxlength</strong></td>
+                                <td>Limite de caracteres</td>
+                                <td>maxlength="50"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>required</strong></td>
+                                <td>Campo obrigatório</td>
+                                <td>required</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Border Radius</strong></td>
+                                <td>Arredonda bodas</td>
+                                <td>border-radius:10px</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Gradient Background</strong></td>
+                                <td>Criar um fundo degrade</td>
+                                <td>background: linear-gradient(45deg,#0077b6,#03045e);</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
 
 
 
-    <footer class="footer">
-        <p>📚 Arquivo de Estudos HTML - Atributos de Input</p>
-        <p>Estrutura reutilizável para próximos temas</p>
-    </footer>
 
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetSection = document.querySelector(targetId);
-                if (targetSection) {
-                    targetSection.scrollIntoView({ behavior: 'smooth' });
-                }
+
+        <footer class="footer">
+            <p>📚 Arquivo de Estudos HTML - Atributos de Input</p>
+            <p>Estrutura reutilizável para próximos temas</p>
+        </footer>
+
+        <script>
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
             });
-        });
 
-        // Active navigation highlighting
-        window.addEventListener('scroll', function() {
-            const sections = document.querySelectorAll('.section');
-            const navLinks = document.querySelectorAll('.nav-link');
-            
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
+            // Active navigation highlighting
+            window.addEventListener('scroll', function () {
+                const sections = document.querySelectorAll('.section');
+                const navLinks = document.querySelectorAll('.nav-link');
 
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('active');
-                }
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (scrollY >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + current) {
+                        link.classList.add('active');
+                    }
+                });
             });
-        });
-    </script>
-</div>
+        </script>
+    </div>
 
 </body>
+
 </html>
