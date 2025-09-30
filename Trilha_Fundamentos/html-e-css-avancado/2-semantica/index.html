@@ -27,6 +27,11 @@
             <li><a href="#maxlength" class="nav-link">📐 Maxlength</a></li>
             <li><a href="#required" class="nav-link">⚠️ Required</a></li>
             <li><a href="#formulario-completo" class="nav-link">📋 Formulário Completo</a></li>
+            <li><a href="#lista-descricao" class="nav-link">📝 Lista de Descrição</a></li>
+            <li><a href="#citacoes" class="nav-link">💬 Citações</a></li>
+            <li><a href="#tag-main" class="nav-link">🏠 Tag Main</a></li>
+            <li><a href="#tag-address" class="nav-link">📍 Tag Address</a></li>
+            <li><a href="#tag-figure" class="nav-link">🖼️ Tag Figure</a></li>
             <li><a href="#resumo" class="nav-link">📊 Resumo</a></li>
         </ul>
     </nav>
@@ -513,6 +518,335 @@
                     </table>
                 </div>
             </section>
+
+            <!-- Lista de Descrição Section -->
+            <section id="lista-descricao" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">📝 Lista de Descrição</h2>
+                    <p class="section-description">
+                        As listas de descrição são usadas para criar pares de termos e suas definições, ideais para glossários, FAQs e dicionários.
+                    </p>
+                </div>
+
+                <div class="attribute-info">
+                    <h4>Elementos da Lista de Descrição:</h4>
+                    <p><strong>&lt;dl&gt;</strong> - Define a lista de descrição (Description List)</p>
+                    <p><strong>&lt;dt&gt;</strong> - Define o termo a ser descrito (Description Term)</p>
+                    <p><strong>&lt;dd&gt;</strong> - Define a descrição do termo (Description Details)</p>
+                </div>
+
+                <div class="code-example">
+&lt;dl class="glossario"&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;HyperText Markup Language - Linguagem de marcação para criar páginas web&lt;/dd&gt;
+    
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Cascading Style Sheets - Linguagem para estilizar páginas web&lt;/dd&gt;
+    
+    &lt;dt&gt;JavaScript&lt;/dt&gt;
+    &lt;dd&gt;Linguagem de programação para adicionar interatividade às páginas web&lt;/dd&gt;
+&lt;/dl&gt;
+                </div>
+
+                <h3>Exemplo Prático:</h3>
+                <dl class="glossario">
+                    <dt>Semântica HTML</dt>
+                    <dd>Uso de elementos HTML que transmitem significado sobre o conteúdo, não apenas aparência visual.</dd>
+                    
+                    <dt>Acessibilidade</dt>
+                    <dd>Prática de tornar websites utilizáveis por pessoas com diferentes habilidades e necessidades.</dd>
+                    
+                    <dt>SEO</dt>
+                    <dd>Search Engine Optimization - Otimização para mecanismos de busca para melhorar a visibilidade do site.</dd>
+                </dl>
+            </section>
+
+            <!-- Citações Section -->
+            <section id="citacoes" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">💬 Citações</h2>
+                    <p class="section-description">
+                        As tags de citação são usadas para marcar conteúdo citado de outras fontes, melhorando a semântica e acessibilidade.
+                    </p>
+                </div>
+
+                <div class="attribute-info">
+                    <h4>Elementos de Citação:</h4>
+                    <p><strong>&lt;blockquote&gt;</strong> - Para citações longas em bloco, geralmente com quebra de linha</p>
+                    <p><strong>&lt;q&gt;</strong> - Para citações curtas inline, automaticamente adiciona aspas</p>
+                    <p><strong>&lt;cite&gt;</strong> - Para referenciar o título de uma obra (livro, filme, artigo)</p>
+                </div>
+
+                <div class="code-example">
+&lt;blockquote cite="https://developer.mozilla.org"&gt;
+    &lt;p&gt;A web é para todos, e coletivamente temos a responsabilidade de mantê-la acessível.&lt;/p&gt;
+    &lt;footer&gt;— &lt;cite&gt;Mozilla Developer Network&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Como disse Tim Berners-Lee: &lt;q&gt;A web foi projetada para ser descentralizada.&lt;/q&gt;&lt;/p&gt;
+
+&lt;p&gt;Recomendo a leitura do livro &lt;cite&gt;Don't Make Me Think&lt;/cite&gt; de Steve Krug.&lt;/p&gt;
+                </div>
+
+                <h3>Exemplo Prático:</h3>
+                <blockquote cite="https://www.w3.org/WAI/">
+                    <p>A web é fundamentalmente projetada para funcionar para todas as pessoas, independentemente de seu hardware, software, idioma, localização ou capacidade.</p>
+                    <footer>— <cite>Web Accessibility Initiative (WAI)</cite></footer>
+                </blockquote>
+
+                <p>Steve Jobs uma vez disse: <q>Design não é apenas como algo parece e como se sente. Design é como funciona.</q></p>
+
+                <p>Para aprender mais sobre UX, recomendo o livro <cite>The Design of Everyday Things</cite> de Don Norman.</p>
+            </section>
+
+            <!-- Tag Main Section -->
+            <section id="tag-main" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">🏠 Tag Main</h2>
+                    <p class="section-description">
+                        A tag &lt;main&gt; define o conteúdo principal de um documento, excluindo cabeçalhos, rodapés, barras laterais e navegação.
+                    </p>
+                </div>
+
+                <div class="attribute-info">
+                    <h4>Características da Tag Main:</h4>
+                    <p><strong>Único por página:</strong> Deve haver apenas um elemento &lt;main&gt; por documento</p>
+                    <p><strong>Conteúdo principal:</strong> Contém o conteúdo central e único da página</p>
+                    <p><strong>Acessibilidade:</strong> Ajuda leitores de tela a identificar o conteúdo principal</p>
+                    <p><strong>SEO:</strong> Melhora a compreensão do conteúdo pelos mecanismos de busca</p>
+                </div>
+
+                <div class="code-example">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Minha Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;nav&gt;Menu de navegação&lt;/nav&gt;
+    &lt;/header&gt;
+    
+    &lt;main&gt;
+        &lt;h1&gt;Conteúdo Principal&lt;/h1&gt;
+        &lt;article&gt;
+            &lt;p&gt;Este é o conteúdo principal da página...&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/main&gt;
+    
+    &lt;aside&gt;Barra lateral&lt;/aside&gt;
+    &lt;footer&gt;Rodapé&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </div>
+
+                <div class="attribute-info">
+                    <h4>Boas Práticas:</h4>
+                    <p>• Não inclua elementos repetidos como navegação, cabeçalho ou rodapé dentro do &lt;main&gt;</p>
+                    <p>• Use apenas um &lt;main&gt; por página</p>
+                    <p>• Coloque o conteúdo mais importante e único da página dentro do &lt;main&gt;</p>
+                    <p>• Combine com outras tags semânticas como &lt;article&gt;, &lt;section&gt; e &lt;aside&gt;</p>
+                </div>
+            </section>
+
+            <!-- Tag Address Section -->
+            <section id="tag-address" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">📍 Tag Address</h2>
+                    <p class="section-description">
+                        A tag &lt;address&gt; fornece informações de contato para o autor ou proprietário do documento ou seção.
+                    </p>
+                </div>
+
+                <div class="attribute-info">
+                    <h4>Uso da Tag Address:</h4>
+                    <p><strong>Informações de contato:</strong> Email, telefone, endereço físico, redes sociais</p>
+                    <p><strong>Escopo:</strong> Pode ser para toda a página ou para uma seção específica</p>
+                    <p><strong>Não é para endereços gerais:</strong> Apenas para contato do autor/proprietário</p>
+                    <p><strong>Estilização padrão:</strong> Geralmente renderizada em itálico pelos navegadores</p>
+                </div>
+
+                <div class="code-example">
+&lt;!-- Informações de contato do autor da página --&gt;
+&lt;address&gt;
+    &lt;p&gt;Escrito por &lt;a href="mailto:joao@exemplo.com"&gt;João Silva&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;Telefone: &lt;a href="tel:+5511999999999"&gt;(11) 99999-9999&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;Endereço: Rua das Flores, 123 - São Paulo, SP&lt;/p&gt;
+&lt;/address&gt;
+
+&lt;!-- Informações de contato dentro de um artigo --&gt;
+&lt;article&gt;
+    &lt;h2&gt;Como Criar Sites Acessíveis&lt;/h2&gt;
+    &lt;p&gt;Conteúdo do artigo...&lt;/p&gt;
+    
+    &lt;address&gt;
+        &lt;p&gt;Por &lt;a href="mailto:maria@webdev.com"&gt;Maria Santos&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Desenvolvedora Front-end na WebDev Company&lt;/p&gt;
+    &lt;/address&gt;
+&lt;/article&gt;
+                </div>
+
+                <h3>Exemplo Prático:</h3>
+                <address class="contact-info">
+                    <p>Criado por <a href="mailto:estudante@htmlcss.com">Estudante HTML/CSS</a></p>
+                    <p>GitHub: <a href="https://github.com/estudante" target="_blank">@estudante</a></p>
+                    <p>LinkedIn: <a href="https://linkedin.com/in/estudante" target="_blank">Estudante Dev</a></p>
+                </address>
+            </section>
+
+            <!-- Tag Figure Section -->
+            <section id="tag-figure" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">🖼️ Tag Figure</h2>
+                    <p class="section-description">
+                        A tag &lt;figure&gt; representa conteúdo independente, como imagens, diagramas, códigos, com uma legenda opcional usando &lt;figcaption&gt;.
+                    </p>
+                </div>
+
+                <div class="attribute-info">
+                    <h4>Elementos Figure:</h4>
+                    <p><strong>&lt;figure&gt;</strong> - Container para conteúdo independente</p>
+                    <p><strong>&lt;figcaption&gt;</strong> - Legenda ou descrição do conteúdo</p>
+                    <p><strong>Conteúdo:</strong> Imagens, gráficos, códigos, tabelas, vídeos</p>
+                    <p><strong>Independente:</strong> Pode ser movido sem afetar o fluxo do documento</p>
+                </div>
+
+                <div class="code-example">
+&lt;figure&gt;
+    &lt;img src="grafico-vendas.png" alt="Gráfico mostrando aumento de 30% nas vendas"&gt;
+    &lt;figcaption&gt;Figura 1: Crescimento das vendas no último trimestre&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;pre&gt;&lt;code&gt;
+function calcularMedia(numeros) {
+    const soma = numeros.reduce((a, b) =&gt; a + b, 0);
+    return soma / numeros.length;
+}
+    &lt;/code&gt;&lt;/pre&gt;
+    &lt;figcaption&gt;Código 1: Função para calcular média de um array&lt;/figcaption&gt;
+&lt;/figure&gt;
+                </div>
+
+                <h3>Exemplos Práticos:</h3>
+                
+                <figure class="code-figure">
+                    <div class="code-example">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Minha Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Olá, Mundo!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </div>
+                    <figcaption>Exemplo 1: Estrutura básica de um documento HTML5</figcaption>
+                </figure>
+
+                <figure class="diagram-figure">
+                    <div class="css-box-model">
+                        <div class="margin">Margin
+                            <div class="border">Border
+                                <div class="padding">Padding
+                                    <div class="content">Content</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption>Figura 2: Representação visual do Box Model CSS</figcaption>
+                </figure>
+            </section>
+
+            <!-- Resumo Section -->
+            <section id="resumo" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">📊 Resumo dos Elementos Semânticos</h2>
+                    <p class="section-description">
+                        Tabela resumo com todos os elementos semânticos estudados e suas principais características.
+                    </p>
+                </div>
+
+                <div class="summary-container">
+                    <table class="summary-table">
+                        <thead>
+                            <tr>
+                                <th>Elemento</th>
+                                <th>Descrição</th>
+                                <th>Exemplo de Uso</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Meta Tags</strong></td>
+                                <td>Fornecer informações sobre o conteúdo da página</td>
+                                <td><code>&lt;meta name="description" content="Descrição da página"&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Word Wrap</strong></td>
+                                <td>Controlar quebra de linha em textos longos</td>
+                                <td><code>word-wrap: break-word;</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Webkit</strong></td>
+                                <td>Propriedades específicas para navegadores WebKit</td>
+                                <td><code>-webkit-transform: rotate(45deg);</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Transição</strong></td>
+                                <td>Criar animações suaves entre estados</td>
+                                <td><code>transition: all 0.3s ease;</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Animação</strong></td>
+                                <td>Criar animações complexas com keyframes</td>
+                                <td><code>animation: slideIn 2s ease-in-out;</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sombra</strong></td>
+                                <td>Adicionar sombras a elementos</td>
+                                <td><code>box-shadow: 10px 10px 5px #000;</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Linear Gradient</strong></td>
+                                <td>Criar fundos com gradiente linear</td>
+                                <td><code>background: linear-gradient(45deg, #0077b6, #03045e);</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Border Radius</strong></td>
+                                <td>Criar bordas arredondadas</td>
+                                <td><code>border-radius: 10px;</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Lista de Descrição</strong></td>
+                                <td>Criar pares de termos e definições</td>
+                                <td><code>&lt;dl&gt;&lt;dt&gt;Termo&lt;/dt&gt;&lt;dd&gt;Definição&lt;/dd&gt;&lt;/dl&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Citações</strong></td>
+                                <td>Marcar conteúdo citado de outras fontes</td>
+                                <td><code>&lt;blockquote&gt;&lt;q&gt;&lt;cite&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tag Main</strong></td>
+                                <td>Definir o conteúdo principal do documento</td>
+                                <td><code>&lt;main&gt;Conteúdo principal&lt;/main&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tag Address</strong></td>
+                                <td>Informações de contato do autor</td>
+                                <td><code>&lt;address&gt;Contato do autor&lt;/address&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tag Figure</strong></td>
+                                <td>Conteúdo independente com legenda opcional</td>
+                                <td><code>&lt;figure&gt;&lt;img&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
         </main>
 
 

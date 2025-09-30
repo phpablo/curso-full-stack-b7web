@@ -800,3 +800,191 @@ html {
     background: linear-gradient(180deg, #2563eb 0%, #7c3aed 100%);
     box-shadow: 0 0 10px rgba(59, 130, 246, 0.4);
 }
+
+/* Estilos específicos para novos elementos */
+
+/* Lista de Descrição */
+.glossario {
+    background: #1a1f2e;
+    border: 1px solid #2d3748;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.glossario dt {
+    font-weight: 600;
+    color: #60a5fa;
+    font-size: 1.1em;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.glossario dt:first-child {
+    margin-top: 0;
+}
+
+.glossario dd {
+    color: #cbd5e1;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    padding-left: 15px;
+    border-left: 3px solid #3b82f6;
+}
+
+/* Citações */
+blockquote {
+    background: #1a1f2e;
+    border-left: 4px solid #3b82f6;
+    margin: 20px 0;
+    padding: 20px 25px;
+    border-radius: 0 8px 8px 0;
+    position: relative;
+}
+
+blockquote p {
+    color: #e2e8f0;
+    font-style: italic;
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin: 0;
+}
+
+blockquote footer {
+    margin-top: 15px;
+    color: #94a3b8;
+    font-size: 0.9em;
+    text-align: right;
+}
+
+blockquote cite {
+    color: #60a5fa;
+    font-style: normal;
+    font-weight: 500;
+}
+
+q {
+    color: #e2e8f0;
+    font-style: italic;
+    quotes: '"' '"' "'" "'";
+}
+
+q:before {
+    content: open-quote;
+    color: #3b82f6;
+    font-weight: bold;
+}
+
+q:after {
+    content: close-quote;
+    color: #3b82f6;
+    font-weight: bold;
+}
+
+cite {
+    color: #60a5fa;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Tag Address */
+.contact-info {
+    background: #1a1f2e;
+    border: 1px solid #2d3748;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    font-style: normal;
+}
+
+.contact-info p {
+    margin: 8px 0;
+    color: #cbd5e1;
+}
+
+.contact-info a {
+    color: #60a5fa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #3b82f6;
+    text-decoration: underline;
+}
+
+/* Tag Figure */
+figure {
+    margin: 30px 0;
+    background: #1a1f2e;
+    border: 1px solid #2d3748;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+figure.code-figure {
+    margin: 25px 0;
+}
+
+figure.diagram-figure {
+    padding: 20px;
+    text-align: center;
+}
+
+figcaption {
+    background: #0f1419;
+    color: #94a3b8;
+    padding: 15px 20px;
+    font-size: 0.9em;
+    font-style: italic;
+    border-top: 1px solid #2d3748;
+    text-align: center;
+}
+
+/* CSS Box Model Visual */
+.css-box-model {
+    display: inline-block;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    text-align: center;
+}
+
+.css-box-model .margin {
+    background: #fbbf24;
+    color: #000;
+    padding: 20px;
+    border: 2px dashed #f59e0b;
+}
+
+.css-box-model .border {
+    background: #34d399;
+    color: #000;
+    padding: 15px;
+    border: 2px solid #10b981;
+}
+
+.css-box-model .padding {
+    background: #60a5fa;
+    color: #000;
+    padding: 15px;
+    border: 2px solid #3b82f6;
+}
+
+.css-box-model .content {
+    background: #f87171;
+    color: #000;
+    padding: 20px;
+    border: 2px solid #ef4444;
+    min-width: 100px;
+}
+
+/* Melhorias gerais para elementos semânticos */
+dl, blockquote, figure, address {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+dl:hover, blockquote:hover, figure:hover, address:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+}
