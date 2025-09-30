@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox na Prática</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <h2>📚 FLEXBOX NA PRÁTICA</h2>
+        <ul class="nav-menu">
+            <li><a href="#flexbox" class="nav-link">📋Flexbox</a></li>
+            <li><a href="#resumo" class="nav-link">📊 Resumo</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header class="header">
+            <h1>Flexbox na Prática</h1>
+            <p>Explorando os principais conceitos do Flexbox para layout flexível e responsivo</p>
+        </header>
+
+        <!-- MAIN: Define o conteúdo principal e único do documento. O conteúdo dentro dele não deve se repetir em outras páginas. -->
+        <main>
+            <!-- flexbox Section -->
+            <section id="flexbox" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">📊 Flexbox</h2>
+                    <p class="section-description">
+                        O Flexbox é um layout do CSS que permite a criação de layouts flexíveis e responsivos.
+                    </p>
+                </div>
+
+                <div class="summary-container">
+                    <table class="summary-table">
+                        <thead>
+                            <tr>
+                                <th>Elemento</th>
+                                <th>Descrição</th>
+                                <th>Exemplo de Uso</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Meta Tags</strong></td>
+                                <td>Fornecer informações sobre o conteúdo da página</td>
+                                <td><code>&lt;meta name="description" content="Descrição da página"&gt;</code></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+        </main>
+        <footer class="footer">
+            <p>📚 Arquivo de Estudo - Flexbox na Prática</p>
+            <p>Estrutura reutilizável para próximos temas</p>
+        </footer>
+
+        <script>
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+
+            // Active navigation highlighting
+            window.addEventListener('scroll', function () {
+                const sections = document.querySelectorAll('.section');
+                const navLinks = document.querySelectorAll('.nav-link');
+
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (scrollY >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        </script>
+    </div>
+
+</body>
+
+</html>

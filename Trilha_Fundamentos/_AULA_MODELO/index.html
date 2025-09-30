@@ -3,27 +3,898 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="style.css">
-    <title>Titulo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos de Input - Estudo HTML</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <h2>📚 HTML E CSS AVANÇADO</h2>
+        <ul class="nav-menu">
+            <li><a href="#metatag" class="nav-link">📋Meta tag social sharing</a></li>
+            <li><a href="#wordwrap" class="nav-link">📋Word Wrap</a></li>
+            <li><a href="#webkit" class="nav-link">📋Webkit</a></li>
+            <li><a href="#transicao" class="nav-link">📋Transição</a></li>
+            <li><a href="#animacao" class="nav-link">📋Animação</a></li>
+            <li><a href="#sombra" class="nav-link">📋Sombra</a></li>
+            <li><a href="#lineargradient" class="nav-link">📋Linear Gradient</a></li>
+            <li><a href="#borderradius" class="nav-link">📋Border Radius</a></li>
+            <li><a href="#placeholder" class="nav-link">🏷️ Placeholder</a></li>
+            <li><a href="#autofocus" class="nav-link">🎯 Autofocus</a></li>
+            <li><a href="#size" class="nav-link">📏 Size</a></li>
+            <li><a href="#maxlength" class="nav-link">📐 Maxlength</a></li>
+            <li><a href="#required" class="nav-link">⚠️ Required</a></li>
+            <li><a href="#formulario-completo" class="nav-link">📋 Formulário Completo</a></li>
+            <li><a href="#lista-descricao" class="nav-link">📝 Lista de Descrição</a></li>
+            <li><a href="#citacoes" class="nav-link">💬 Citações</a></li>
+            <li><a href="#tag-main" class="nav-link">🏠 Tag Main</a></li>
+            <li><a href="#tag-address" class="nav-link">📍 Tag Address</a></li>
+            <li><a href="#tag-figure" class="nav-link">🖼️ Tag Figure</a></li>
+            <li><a href="#resumo" class="nav-link">📊 Resumo</a></li>
+        </ul>
+    </nav>
 
-     <h2>titulo da aula</h2>
-     <hr>
-     <p>Não, disse Ron, em um tom nada convincente. Mas antes que Harry pudesse exigir ver o jornal. Draco Malfoy gritou do outro lado do Salão Principal, da mesa da Sonserina.Ei, Potter! Potter! Como está sua cabeça? Você está se sentindo bem?</p>
+    <!-- Main Content -->
+    <div class="main-content">
+        <header class="header">
+            <h1>Atributos de Input HTML</h1>
+            <p>Explorando os principais atributos para melhorar a experiência do usuário em formulários</p>
+        </header>
 
-     <p>Tem certeza de que não vai enlouquecer conosco?Malfoy também estava segurando um exemplar do Profeta Diário. Os sonserinos de todos os lados da mesa estavam rindo, girando em seus assentos para ver a reação de Harry.</p>
-     
+        <!-- MAIN: Define o conteúdo principal e único do documento. O conteúdo dentro dele não deve se repetir em outras páginas. -->
+        <main>
+
+            <!-- metatag Section -->
+            <section id="metatag" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">🏷️Meta tag social sharing</h2>
+                    <p class="section-description"> 
+                        As meta tags são usadas para fornecer informações sobre o conteúdo da página para os mecanismos de busca e redes sociais.
+                    </p>
+                </div>
+                <div class="section-content">
+                        <div class="metatag">
+                            <div id="metatag1">
+                                metatag 1
+                            </div>
+                            <div id="metatag2">
+                                metatag 2
+                            </div>
+                            <div id="metatag3">
+                             metatag 3 
+                            </div>
+                        </div>
+                    <div class="code-example">
+                        <p>
+                            &lt;meta name="description" content="Descrição do conteúdo da página"&gt;
+                        </p>
+                        <p>
+                            &lt;meta name="keywords" content="palavra-chave1, palavra-chave2, palavra-chave3"&gt;
+                        </p>
+                        <p>
+                            &lt;meta name="author" content="Nome do Autor"&gt;
+                        </p>
+                    </div>
+
+                    <div class="attribute-info">
+                        <strong>💡 Dica:</strong> 
+                        As meta tags são usadas para fornecer informações sobre o conteúdo da página para os mecanismos de busca e redes sociais.
+                    </div>
+                </div>
+            </section>
+
+            <!-- wordwrap Section -->
+            <section id="wordwrap" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">🏷️Word Wrap</h2>
+                    <p class="section-description">Cria uma transição suave entre dois estados</p>
+                </div>
+                <div class="section-content">
+                        <div class="wordwrap">
+                            <div id="wordwrap1">
+                                Wordwrap 1
+                            </div>
+                            <div id="wordwrap2">
+                                Wordwrap 2
+                            </div>
+                            <div id="wordwrap3">
+                             aaaaaaaaaaaaaaaaa
+                            </div>
+                        </div>
+                    <div class="code-example">
+                        wordwrap: break-word;
+                    </div>
+
+                    <div class="attribute-info">
+                        <strong>💡 Dica:</strong> 
+                        O wordwrap é utilizado para que o texto não ultrapasse o limite do elemento.
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- webkit Section -->
+            <section id="webkit" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">🏷️Webkit</h2>
+                    <p class="section-description">Cria uma transição suave entre dois estados</p>
+                </div>
+                <div class="section-content">
+                        <div class="webkit">
+                            <div id="webkit1">
+                                Webkit 1
+                            </div>
+                            <div id="webkit2">
+                                Webkit 2
+                            </div>
+                            <div id="webkit3">
+                                Webkit 3
+                            </div>
+                        </div>
+                    <div class="code-example">Cria uma transição suave entre dois estados<br>
+                    Exemplo: transition: all 0.5s ease-in-out;
+                    </div>
+
+                    <div class="attribute-info">
+                        <strong>💡 Dica:</strong> 
+                        O webkit funciona em vários elementos como div's, inputs, imagens e outros.
+                        O webkit é aplicado ao estado hover, focus, active e outros.
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- transicao Section -->
+            <section id="transicao" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">🏷️Transição</h2>
+                    <p class="section-description">Cria uma transição suave entre dois estados</p>
+                </div>
+                <div class="section-content">
+                        <div class="transicao">
+                            <div id="transicao1">
+                                Transição 1
+                            </div>
+                            <div id="transicao2">
+                                Transição 2
+                            </div>
+                            <div id="transicao3">
+                                Transição 3
+                            </div>
+                        </div>
+                    <div class="code-example">Cria uma transição suave entre dois estados<br>
+                    Exemplo: transition: all 0.5s ease-in-out;
+                    </div>
+
+                    <div class="attribute-info">
+                        <strong>💡 Dica:</strong> 
+                        A transição funciona em vários elementos como div's, inputs, imagens e outros.
+                        A transição é aplicada ao estado hover, focus, active e outros.
+                    </div>
+                </div>
+            </section>
+
+            <!-- sombra Section -->
+            <section id="sombra" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">🏷️Sombra</h2>
+                    <p class="section-description">Cria sombra no elemento</p>
+                </div>
+                <div class="section-content">
+                        <div class="sombra">
+                            <div id="sombra1">
+                                Sombra 1
+                            </div>
+                            <div id="sombra2">
+                                Sombra 2
+                            </div>
+                            <div id="sombra3">
+                                Sombra 3
+                            </div>
+                        </div>
+                    <div class="code-example">Cria uma sombra que muda de cor o fundo<br>
+                    Exemplo: box-shadow: 0 0 10px #000;
+                    </div>
+
+                    <div class="attribute-info">
+                        <strong>💡 Dica:</strong> 
+                        A sombra funciona em vários elementos como div's, inputs, imagens e outros.
+                    </div>
+                </div>
+            </section>
+
+            <!-- animacao Section -->
+            <section id="animacao" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">🏷️Animação</h2>
+                    <p class="section-description">Cria animação no elemento</p>
+                </div>
+                <div class="section-content">
+                        <div class="animacao">
+                            <div id="animacao1">
+                                Animação 1
+                            </div>
+                            <div id="animacao2">
+                                Animação 2
+                            </div>
+                            <div id="animacao3">
+                                Animação 3
+                            </div>
+                        </div>
+                    <div class="code-example">Cria uma animação que muda de cor o fundo<br>
+                    Exemplo: @keyframes animacao1 {<br>
+                        0% {
+                            background-color: #03045e;
+                        }
+                        50% {
+                            background-color: #1bb600;
+                        }
+                        100% {
+                            background-color: #03045e;
+                        }
+                    }
+                    </div>
+
+                    <div class="attribute-info">
+                        <strong>💡 Dica:</strong> 
+                        A animação funciona em vários elementos como div's, inputs, imagens e outros.
+                    </div>
+                </div>
+            </section>
+            <!-- Linear gradient Section -->
+            <section id="lineargradient" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">🏷️Linear Gradient</h2>
+                    <p class="section-description">Cria background em gradiente linear ( colocar graus tbm muda a direção )</p>
+                </div>
+                <div class="section-content">
+                        <div class="lineargradient">
+                            <div id="lineargradient1">
+                                Linear Gradient
+                            </div>
+                            <div id="lineargradient2">
+                                Gradient 90 graus
+                            </div>
+                            <div id="lineargradient3">
+                                Gradient 45 graus
+                            </div>
+                        </div>
+                    <div class="code-example">Criar degradê de background. A fórmula é <br>background:linear-gradient(graus,cor1,cor2)<br>
+                    Exemplo: background: linear-gradient(45deg,#0077b6,#03045e);
+                    </div>
+
+                    <div class="attribute-info">
+                        <strong>💡 Dica:</strong> 
+                        Funciona em vários elementos como div's, inputs, imagens e outros.
+                    </div>
+                </div>
+            </section>
+
+            <!-- border radius Section -->
+            <section id="borderradius" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">🏷️Border Radius</h2>
+                    <p class="section-description">Deixa as bordas arredondadas de qualquer ( ou quase) elemento</p>
+                </div>
+                <div class="section-content">
+                        <div class="divRadius">
+                            <div id="radiusAll">
+                                Todas as bordas
+                            </div>
+                            <div id="radiusRight">
+                                Borda direita
+                            </div>
+                            <div id="radiusLeft">
+                                Borda Esquerda
+                            </div>
+                        </div>
+                    <div class="code-example">&lt;Comando border-radius vale para todos os lados do elemento. A fórmula é <br> &ltborder-eixos(x e y)-radius&gt "&gt;<br>
+                    Exemplo: &ltborder-top-right-radius:10px;&gt;
+                    </div>
+
+                    <div class="attribute-info">
+                        <strong>💡 Dica:</strong> 
+                        Funciona em vários elementos como div's, inputs, imagens e outros.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Placeholder Section -->
+            <section id="placeholder" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">🏷️ Placeholder</h2>
+                    <p class="section-description">Fornece uma dica visual sobre o que deve ser inserido no campo</p>
+                </div>
+                <div class="section-content">
+                    <div class="form-group">
+                        <label class="form-label" for="nome-placeholder">Nome completo:</label>
+                        <input type="text" id="nome-placeholder" placeholder="Digite seu nome completo"
+                            class="form-input">
+                    </div>
+
+                    <div class="code-example">&lt;input type="text" placeholder="Digite seu nome completo"&gt;</div>
+
+                    <div class="attribute-info">
+                        <strong>💡 Dica:</strong> O placeholder desaparece quando o usuário começa a digitar e não
+                        substitui o label.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Autofocus Section -->
+            <section id="autofocus" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">🎯 Autofocus</h2>
+                    <p class="section-description">Foca automaticamente no campo quando a página carrega</p>
+                </div>
+                <div class="section-content">
+                    <div class="form-group">
+                        <label class="form-label" for="email-autofocus">E-mail:</label>
+                        <input type="email" id="email-autofocus" placeholder="seu@email.com" class="form-input">
+                    </div>
+
+                    <div class="code-example">&lt;input type="email" autofocus placeholder="seu@email.com"&gt;</div>
+
+                    <div class="attribute-info">
+                        <strong>⚠️ Atenção:</strong> Use apenas um autofocus por página para não confundir o usuário.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Size Section -->
+            <section id="size" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">📏 Size</h2>
+                    <p class="section-description">Define a largura visual do campo em caracteres</p>
+                </div>
+                <div class="section-content">
+                    <div class="form-group">
+                        <label class="form-label" for="codigo-size">Código (4 dígitos):</label>
+                        <input type="text" id="codigo-size" size="4" maxlength="4" placeholder="0000"
+                            class="form-input">
+                    </div>
+
+                    <div class="code-example">&lt;input type="text" size="4" maxlength="4" placeholder="0000"&gt;</div>
+
+                    <div class="attribute-info">
+                        <strong>📝 Nota:</strong> O size define apenas a largura visual, não limita a quantidade de
+                        caracteres.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Maxlength Section -->
+            <section id="maxlength" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">📐 Maxlength</h2>
+                    <p class="section-description">Limita o número máximo de caracteres que podem ser digitados</p>
+                </div>
+                <div class="section-content">
+                    <div class="form-group">
+                        <label class="form-label" for="usuario-maxlength">Nome de usuário (máx. 15 caracteres):</label>
+                        <input type="text" id="usuario-maxlength" maxlength="15" placeholder="usuario123"
+                            class="form-input">
+                    </div>
+
+                    <div class="code-example">&lt;input type="text" maxlength="15" placeholder="usuario123"&gt;</div>
+
+                    <div class="attribute-info">
+                        <strong>✅ Benefício:</strong> Evita que o usuário digite mais do que o permitido, melhorando a
+                        UX.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Required Section -->
+            <section id="required" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">⚠️ Required</h2>
+                    <p class="section-description">Torna o preenchimento do campo obrigatório</p>
+                </div>
+                <div class="section-content">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label" for="nome-required">Nome completo (obrigatório):</label>
+                            <input type="text" id="nome-required" required placeholder="Digite seu nome"
+                                class="form-input">
+                        </div>
+
+                        <button type="submit"
+                            style="background: #667eea; color: white; padding: 0.8rem 1.5rem; border: none; border-radius: 8px; cursor: pointer;">Enviar</button>
+                    </form>
+
+                    <div class="code-example">&lt;input type="text" required placeholder="Digite seu nome"&gt;</div>
+
+                    <div class="attribute-info">
+                        <strong>🔒 Validação:</strong> O navegador impede o envio do formulário se campos required
+                        estiverem vazios.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Complete Form Section -->
+            <section id="formulario-completo" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">📋 Formulário Completo</h2>
+                    <p class="section-description">Exemplo prático combinando todos os atributos estudados</p>
+                </div>
+                <div class="section-content">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label" for="nome-completo">Nome Completo:</label>
+                            <input type="text" id="nome-completo" required 
+                                placeholder="Digite seu nome completo" maxlength="50" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="email-completo">E-mail:</label>
+                            <input type="email" id="email-completo" required placeholder="seu@email.com"
+                                class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="telefone-completo">Telefone:</label>
+                            <input type="tel" id="telefone-completo" size="15" placeholder="(11) 99999-9999"
+                                maxlength="15" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="codigo-completo">Código de Verificação:</label>
+                            <input type="text" id="codigo-completo" required size="6" maxlength="6" placeholder="000000"
+                                class="form-input">
+                        </div>
+
+                        <button type="submit"
+                            style="background: #667eea; color: white; padding: 0.8rem 2rem; border: none; border-radius: 8px; cursor: pointer; font-size: 1rem;">Enviar
+                            Formulário</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Summary Section -->
+            <section id="resumo" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">📊 Resumo dos Atributos</h2>
+                    <p class="section-description">Tabela de referência rápida dos atributos estudados</p>
+                </div>
+                <div class="section-content">
+                    <table class="summary-table">
+                        <thead>
+                            <tr>
+                                <th>Atributo</th>
+                                <th>Função</th>
+                                <th>Exemplo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>placeholder</strong></td>
+                                <td>Dica visual no campo</td>
+                                <td>placeholder="Digite aqui"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>autofocus</strong></td>
+                                <td>Foco automático</td>
+                                <td>autofocus</td>
+                            </tr>
+                            <tr>
+                                <td><strong>size</strong></td>
+                                <td>Largura visual</td>
+                                <td>size="10"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>maxlength</strong></td>
+                                <td>Limite de caracteres</td>
+                                <td>maxlength="50"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>required</strong></td>
+                                <td>Campo obrigatório</td>
+                                <td>required</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Border Radius</strong></td>
+                                <td>Arredonda bodas</td>
+                                <td>border-radius:10px</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Gradient Background</strong></td>
+                                <td>Criar um fundo degrade</td>
+                                <td>background: linear-gradient(45deg,#0077b6,#03045e);</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sombra</strong></td>
+                                <td>Criar uma sombra</td>
+                                <td>box-shadow: 10px 10px 5px #000;</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Metatag</strong></td>
+                                <td>Fornecer informações sobre o conteúdo da página</td>
+                                <td>&lt;meta name="description" content="Descrição do conteúdo da página"&gt;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Lista de Descrição Section -->
+            <section id="lista-descricao" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">📝 Lista de Descrição</h2>
+                    <p class="section-description">
+                        As listas de descrição são usadas para criar pares de termos e suas definições, ideais para glossários, FAQs e dicionários.
+                    </p>
+                </div>
+
+                <div class="attribute-info">
+                    <h4>Elementos da Lista de Descrição:</h4>
+                    <p><strong>&lt;dl&gt;</strong> - Define a lista de descrição (Description List)</p>
+                    <p><strong>&lt;dt&gt;</strong> - Define o termo a ser descrito (Description Term)</p>
+                    <p><strong>&lt;dd&gt;</strong> - Define a descrição do termo (Description Details)</p>
+                </div>
+
+                <div class="code-example">
+&lt;dl class="glossario"&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;HyperText Markup Language - Linguagem de marcação para criar páginas web&lt;/dd&gt;
     
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Cascading Style Sheets - Linguagem para estilizar páginas web&lt;/dd&gt;
     
-    <br><br>
-    <hr>
-    <footer>
-        Code by: <a href="https://gitdub.com/phpablo">Pablo Henrique</a> &copy;
-    </footer>
+    &lt;dt&gt;JavaScript&lt;/dt&gt;
+    &lt;dd&gt;Linguagem de programação para adicionar interatividade às páginas web&lt;/dd&gt;
+&lt;/dl&gt;
+                </div>
+
+                <h3>Exemplo Prático:</h3>
+                <dl class="glossario">
+                    <dt>Semântica HTML</dt>
+                    <dd>Uso de elementos HTML que transmitem significado sobre o conteúdo, não apenas aparência visual.</dd>
+                    
+                    <dt>Acessibilidade</dt>
+                    <dd>Prática de tornar websites utilizáveis por pessoas com diferentes habilidades e necessidades.</dd>
+                    
+                    <dt>SEO</dt>
+                    <dd>Search Engine Optimization - Otimização para mecanismos de busca para melhorar a visibilidade do site.</dd>
+                </dl>
+            </section>
+
+            <!-- Citações Section -->
+            <section id="citacoes" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">💬 Citações</h2>
+                    <p class="section-description">
+                        As tags de citação são usadas para marcar conteúdo citado de outras fontes, melhorando a semântica e acessibilidade.
+                    </p>
+                </div>
+
+                <div class="attribute-info">
+                    <h4>Elementos de Citação:</h4>
+                    <p><strong>&lt;blockquote&gt;</strong> - Para citações longas em bloco, geralmente com quebra de linha</p>
+                    <p><strong>&lt;q&gt;</strong> - Para citações curtas inline, automaticamente adiciona aspas</p>
+                    <p><strong>&lt;cite&gt;</strong> - Para referenciar o título de uma obra (livro, filme, artigo)</p>
+                </div>
+
+                <div class="code-example">
+&lt;blockquote cite="https://developer.mozilla.org"&gt;
+    &lt;p&gt;A web é para todos, e coletivamente temos a responsabilidade de mantê-la acessível.&lt;/p&gt;
+    &lt;footer&gt;— &lt;cite&gt;Mozilla Developer Network&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Como disse Tim Berners-Lee: &lt;q&gt;A web foi projetada para ser descentralizada.&lt;/q&gt;&lt;/p&gt;
+
+&lt;p&gt;Recomendo a leitura do livro &lt;cite&gt;Don't Make Me Think&lt;/cite&gt; de Steve Krug.&lt;/p&gt;
+                </div>
+
+                <h3>Exemplo Prático:</h3>
+                <blockquote cite="https://www.w3.org/WAI/">
+                    <p>A web é fundamentalmente projetada para funcionar para todas as pessoas, independentemente de seu hardware, software, idioma, localização ou capacidade.</p>
+                    <footer>— <cite>Web Accessibility Initiative (WAI)</cite></footer>
+                </blockquote>
+
+                <p>Steve Jobs uma vez disse: <q>Design não é apenas como algo parece e como se sente. Design é como funciona.</q></p>
+
+                <p>Para aprender mais sobre UX, recomendo o livro <cite>The Design of Everyday Things</cite> de Don Norman.</p>
+            </section>
+
+            <!-- Tag Main Section -->
+            <section id="tag-main" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">🏠 Tag Main</h2>
+                    <p class="section-description">
+                        A tag &lt;main&gt; define o conteúdo principal de um documento, excluindo cabeçalhos, rodapés, barras laterais e navegação.
+                    </p>
+                </div>
+
+                <div class="attribute-info">
+                    <h4>Características da Tag Main:</h4>
+                    <p><strong>Único por página:</strong> Deve haver apenas um elemento &lt;main&gt; por documento</p>
+                    <p><strong>Conteúdo principal:</strong> Contém o conteúdo central e único da página</p>
+                    <p><strong>Acessibilidade:</strong> Ajuda leitores de tela a identificar o conteúdo principal</p>
+                    <p><strong>SEO:</strong> Melhora a compreensão do conteúdo pelos mecanismos de busca</p>
+                </div>
+
+                <div class="code-example">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Minha Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;nav&gt;Menu de navegação&lt;/nav&gt;
+    &lt;/header&gt;
+    
+    &lt;main&gt;
+        &lt;h1&gt;Conteúdo Principal&lt;/h1&gt;
+        &lt;article&gt;
+            &lt;p&gt;Este é o conteúdo principal da página...&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/main&gt;
+    
+    &lt;aside&gt;Barra lateral&lt;/aside&gt;
+    &lt;footer&gt;Rodapé&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </div>
+
+                <div class="attribute-info">
+                    <h4>Boas Práticas:</h4>
+                    <p>• Não inclua elementos repetidos como navegação, cabeçalho ou rodapé dentro do &lt;main&gt;</p>
+                    <p>• Use apenas um &lt;main&gt; por página</p>
+                    <p>• Coloque o conteúdo mais importante e único da página dentro do &lt;main&gt;</p>
+                    <p>• Combine com outras tags semânticas como &lt;article&gt;, &lt;section&gt; e &lt;aside&gt;</p>
+                </div>
+            </section>
+
+            <!-- Tag Address Section -->
+            <section id="tag-address" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">📍 Tag Address</h2>
+                    <p class="section-description">
+                        A tag &lt;address&gt; fornece informações de contato para o autor ou proprietário do documento ou seção.
+                    </p>
+                </div>
+
+                <div class="attribute-info">
+                    <h4>Uso da Tag Address:</h4>
+                    <p><strong>Informações de contato:</strong> Email, telefone, endereço físico, redes sociais</p>
+                    <p><strong>Escopo:</strong> Pode ser para toda a página ou para uma seção específica</p>
+                    <p><strong>Não é para endereços gerais:</strong> Apenas para contato do autor/proprietário</p>
+                    <p><strong>Estilização padrão:</strong> Geralmente renderizada em itálico pelos navegadores</p>
+                </div>
+
+                <div class="code-example">
+&lt;!-- Informações de contato do autor da página --&gt;
+&lt;address&gt;
+    &lt;p&gt;Escrito por &lt;a href="mailto:joao@exemplo.com"&gt;João Silva&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;Telefone: &lt;a href="tel:+5511999999999"&gt;(11) 99999-9999&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;Endereço: Rua das Flores, 123 - São Paulo, SP&lt;/p&gt;
+&lt;/address&gt;
+
+&lt;!-- Informações de contato dentro de um artigo --&gt;
+&lt;article&gt;
+    &lt;h2&gt;Como Criar Sites Acessíveis&lt;/h2&gt;
+    &lt;p&gt;Conteúdo do artigo...&lt;/p&gt;
+    
+    &lt;address&gt;
+        &lt;p&gt;Por &lt;a href="mailto:maria@webdev.com"&gt;Maria Santos&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Desenvolvedora Front-end na WebDev Company&lt;/p&gt;
+    &lt;/address&gt;
+&lt;/article&gt;
+                </div>
+
+                <h3>Exemplo Prático:</h3>
+                <address class="contact-info">
+                    <p>Criado por <a href="mailto:estudante@htmlcss.com">Estudante HTML/CSS</a></p>
+                    <p>GitHub: <a href="https://github.com/estudante" target="_blank">@estudante</a></p>
+                    <p>LinkedIn: <a href="https://linkedin.com/in/estudante" target="_blank">Estudante Dev</a></p>
+                </address>
+            </section>
+
+            <!-- Tag Figure Section -->
+            <section id="tag-figure" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">🖼️ Tag Figure</h2>
+                    <p class="section-description">
+                        A tag &lt;figure&gt; representa conteúdo independente, como imagens, diagramas, códigos, com uma legenda opcional usando &lt;figcaption&gt;.
+                    </p>
+                </div>
+
+                <div class="attribute-info">
+                    <h4>Elementos Figure:</h4>
+                    <p><strong>&lt;figure&gt;</strong> - Container para conteúdo independente</p>
+                    <p><strong>&lt;figcaption&gt;</strong> - Legenda ou descrição do conteúdo</p>
+                    <p><strong>Conteúdo:</strong> Imagens, gráficos, códigos, tabelas, vídeos</p>
+                    <p><strong>Independente:</strong> Pode ser movido sem afetar o fluxo do documento</p>
+                </div>
+
+                <div class="code-example">
+&lt;figure&gt;
+    &lt;img src="grafico-vendas.png" alt="Gráfico mostrando aumento de 30% nas vendas"&gt;
+    &lt;figcaption&gt;Figura 1: Crescimento das vendas no último trimestre&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;pre&gt;&lt;code&gt;
+function calcularMedia(numeros) {
+    const soma = numeros.reduce((a, b) =&gt; a + b, 0);
+    return soma / numeros.length;
+}
+    &lt;/code&gt;&lt;/pre&gt;
+    &lt;figcaption&gt;Código 1: Função para calcular média de um array&lt;/figcaption&gt;
+&lt;/figure&gt;
+                </div>
+
+                <h3>Exemplos Práticos:</h3>
+                
+                <figure class="code-figure">
+                    <div class="code-example">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Minha Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Olá, Mundo!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </div>
+                    <figcaption>Exemplo 1: Estrutura básica de um documento HTML5</figcaption>
+                </figure>
+
+                <figure class="diagram-figure">
+                    <div class="css-box-model">
+                        <div class="margin">Margin
+                            <div class="border">Border
+                                <div class="padding">Padding
+                                    <div class="content">Content</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption>Figura 2: Representação visual do Box Model CSS</figcaption>
+                </figure>
+            </section>
+
+            <!-- Resumo Section -->
+            <section id="resumo" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">📊 Resumo dos Elementos Semânticos</h2>
+                    <p class="section-description">
+                        Tabela resumo com todos os elementos semânticos estudados e suas principais características.
+                    </p>
+                </div>
+
+                <div class="summary-container">
+                    <table class="summary-table">
+                        <thead>
+                            <tr>
+                                <th>Elemento</th>
+                                <th>Descrição</th>
+                                <th>Exemplo de Uso</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Meta Tags</strong></td>
+                                <td>Fornecer informações sobre o conteúdo da página</td>
+                                <td><code>&lt;meta name="description" content="Descrição da página"&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Word Wrap</strong></td>
+                                <td>Controlar quebra de linha em textos longos</td>
+                                <td><code>word-wrap: break-word;</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Webkit</strong></td>
+                                <td>Propriedades específicas para navegadores WebKit</td>
+                                <td><code>-webkit-transform: rotate(45deg);</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Transição</strong></td>
+                                <td>Criar animações suaves entre estados</td>
+                                <td><code>transition: all 0.3s ease;</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Animação</strong></td>
+                                <td>Criar animações complexas com keyframes</td>
+                                <td><code>animation: slideIn 2s ease-in-out;</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sombra</strong></td>
+                                <td>Adicionar sombras a elementos</td>
+                                <td><code>box-shadow: 10px 10px 5px #000;</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Linear Gradient</strong></td>
+                                <td>Criar fundos com gradiente linear</td>
+                                <td><code>background: linear-gradient(45deg, #0077b6, #03045e);</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Border Radius</strong></td>
+                                <td>Criar bordas arredondadas</td>
+                                <td><code>border-radius: 10px;</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Lista de Descrição</strong></td>
+                                <td>Criar pares de termos e definições</td>
+                                <td><code>&lt;dl&gt;&lt;dt&gt;Termo&lt;/dt&gt;&lt;dd&gt;Definição&lt;/dd&gt;&lt;/dl&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Citações</strong></td>
+                                <td>Marcar conteúdo citado de outras fontes</td>
+                                <td><code>&lt;blockquote&gt;&lt;q&gt;&lt;cite&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tag Main</strong></td>
+                                <td>Definir o conteúdo principal do documento</td>
+                                <td><code>&lt;main&gt;Conteúdo principal&lt;/main&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tag Address</strong></td>
+                                <td>Informações de contato do autor</td>
+                                <td><code>&lt;address&gt;Contato do autor&lt;/address&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tag Figure</strong></td>
+                                <td>Conteúdo independente com legenda opcional</td>
+                                <td><code>&lt;figure&gt;&lt;img&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </main>
+
+
+
+
+
+        <footer class="footer">
+            <p>📚 Arquivo de Estudos HTML - Atributos de Input</p>
+            <p>Estrutura reutilizável para próximos temas</p>
+        </footer>
+
+        <script>
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+
+            // Active navigation highlighting
+            window.addEventListener('scroll', function () {
+                const sections = document.querySelectorAll('.section');
+                const navLinks = document.querySelectorAll('.nav-link');
+
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (scrollY >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        </script>
+    </div>
+
 </body>
 
 </html>
