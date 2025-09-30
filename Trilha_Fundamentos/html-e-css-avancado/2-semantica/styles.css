@@ -48,6 +48,127 @@ body {
         background-color: #03045e;  
     }
 }
+/* start wordwrap strutcture  */
+.wordwrap {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#wordwrap1 {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #03045e;
+}
+#wordwrap2 {   
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #03045e;
+}
+#wordwrap3 {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #03045e;
+    word-wrap: break-word;
+}
+/* end transicao strutcture  */
+
+/* start transicao strutcture  */
+.transicao {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#transicao1 {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #03045e;
+    transition: all 0.5s ease-in-out;
+}
+#transicao2 {   
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #03045e;
+    transition: all 0.5s ease-in-out;
+}
+#transicao3 {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #03045e;
+    transition: all 0.5s ease-in-out;
+}
+
+#transicao1:hover {
+    width: 200px;
+}
+#transicao2:hover {
+    transform: scale(1.2);
+}
+#transicao3:hover {
+    transform: scale(1.2);
+}
+/* end transicao strutcture  */
+/* start sombra strutcture  */
+.sombra {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#sombra1 {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #03045e;
+    box-shadow: 10px 10px 5px #000;
+}
+#sombra2 {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #03045e;
+    box-shadow: 5px 10px 5px #000;
+}
+#sombra3 {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #03045e;
+    box-shadow: 10px 5px 10px #000;
+}
+/* end sombra strutcture  */
+
 /* start animacao strutcture  */
 .animacao {
     display: flex;
