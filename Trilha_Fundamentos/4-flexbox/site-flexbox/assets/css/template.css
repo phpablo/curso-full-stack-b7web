@@ -1,0 +1,156 @@
+:root {
+  --main-font: 'MedievalSharp', sans-serif;
+  --second-font: 'Roboto';
+  --main-color: #3C4E91;
+  --second-color: #EFBC2F;
+  --third-color: #FAFAFA;
+  --four-color: #134C3B;
+}
+
+body {
+  font-family: var(--second-font);
+  margin: 0;
+  padding: 0;
+
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 132px;
+  background-color: var(--third-color);
+  font-family: var(--main-font);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 880px;
+}
+
+.container .logo img {
+  width: 124px;
+  height: 124px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  background-size: contain;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+nav ul,
+nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: #3a3a3a;
+  padding: 15px;
+  margin: 5px;
+}
+
+.active {
+  background-color: var(--second-color);
+  border-radius: 5px;
+
+
+}
+
+nav a:hover {
+  background-color: var(--second-color);
+  border-radius: 5px;
+  transition-duration: 0.4s;
+}
+
+
+#banner {
+  display: flex;
+  justify-content: center;
+  background-image: url(../images/hp.jpg);
+  background-size: cover;
+  height: 670px;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.banner-headline {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: var(--main-font);
+}
+
+.banner-headline h1 {
+  color: var(--third-color);
+  font-size: 50px;
+  text-shadow: 1px 1px 0px #3a3a3a;
+}
+
+.banner-headline h2 {
+  color: var(--third-color);
+  font-size: 24px;
+  text-shadow: 1px 1px 0px #3a3a3a;
+}
+
+.banner-options {
+  height: 210px;
+  display: flex;
+}
+
+.banner-options a {
+  text-decoration: none;
+  color: var(--third-color);
+  border: 1px solid var(--third-color);
+  padding: 5px;
+  font-size: 18px;
+}
+
+.banner1,
+.banner2,
+.banner3 {
+  flex: 1;
+}
+
+.banner1 {
+  background-color: var(--main-color);
+  padding: 20px;
+}
+
+.banner2 {
+  background-color: var(--second-color);
+  padding: 20px;
+}
+
+.banner3 {
+  background-color: var(--four-color);
+  padding: 20px;
+}
+
+.banner-title {
+  font-size: 24px;
+  color: var(--third-color);
+}
+
+.banner-desc {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--third-color);
+}

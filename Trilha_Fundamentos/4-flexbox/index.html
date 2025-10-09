@@ -27,15 +27,60 @@
 
         <!-- MAIN: Define o conteúdo principal e único do documento. O conteúdo dentro dele não deve se repetir em outras páginas. -->
         <main>
+
+            <!-- flexbox alinhamento Section -->
+            <section id="flexbox-alinhamento" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">📊 Flexbox Alinhamento</h2>
+                    <div class="container-alinhamento-center">
+                        <div class="flex-item1">Justify Content Center</div>
+                        <div class="flex-item2">Justify Content Center</div>
+                        <div class="flex-item3">Justify Content Center</div>
+                    </div>
+                    <hr>
+                    <div class="container-alinhamento-center">
+                        <div class="flex-item1">Justify Content Center</div>
+                        <div class="flex-item2">Justify Content Center</div>
+                        <div class="flex-item3">Justify Content Center</div>
+                    </div>
+                    <p class="section-description">
+                        O Flexbox é um layout do CSS que permite a criação de layouts flexíveis e responsivos.
+                        Ele é composto por dois eixos: o eixo principal (main axis) e o eixo transversal (cross axis).
+                        O eixo principal é definido pela propriedade flex-direction, que pode ser row, row-reverse, column ou column-reverse.
+                        O eixo transversal é perpendicular ao eixo principal.
+                        O alinhamento no eixo principal é definido pela propriedade justify-content, que pode ser flex-start, flex-end, center, space-between ou space-around.
+                        O alinhamento no eixo transversal é definido pela propriedade align-items, que pode ser flex-start, flex-end, center, baseline ou stretch.
+                    </p>
+                </div>
+            </section>
             <!-- flexbox Section -->
             <section id="flexbox" class="section">
                 <div class="section-header">
                     <h2 class="section-title">📊 Flexbox</h2>
+                    <div id="flex">
+                        <div class="flex-item1">Item 1</div>
+                        <div class="flex-item2">Item 2</div>
+                        <div class="flex-item3">Item 3</div>
+                    </div>
+                    <hr>
+                    <div id="flex2">
+                        <div class="flex-item1">Item 1</div>
+                        <div class="flex-item2">Item 2</div>
+                        <div class="flex-item3">Item 3</div>
+                    </div>
+                    <hr>
+                    <div id="flex3">
+                        <div class="flex-item1">Item 1</div>
+                        <div class="flex-item2">Item 2</div>
+                        <div class="flex-item3">Item 3</div>
+                    </div>
                     <p class="section-description">
                         O Flexbox é um layout do CSS que permite a criação de layouts flexíveis e responsivos.
                     </p>
                 </div>
+            </section>
 
+                <!-- resumo Section -->
                 <div class="summary-container">
                     <table class="summary-table">
                         <thead>
@@ -47,9 +92,13 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Meta Tags</strong></td>
-                                <td>Fornecer informações sobre o conteúdo da página</td>
-                                <td><code>&lt;meta name="description" content="Descrição da página"&gt;</code></td>
+                                <td><strong>Flexbox</strong></td>
+                                <td>Layout flexível e responsivo</td>
+                                <td><code>&lt;div class="flex-container"&gt;
+    &lt;div class="flex-item"&gt;Item 1&lt;/div&gt;
+    &lt;div class="flex-item"&gt;Item 2&lt;/div&gt;
+    &lt;div class="flex-item"&gt;Item 3&lt;/div&gt;
+&lt;/div&gt;</code></td>
                             </tr>
                             
                         </tbody>
