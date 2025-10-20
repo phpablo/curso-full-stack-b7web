@@ -5,6 +5,7 @@
   --second-color: #EFBC2F;
   --third-color: #FAFAFA;
   --four-color: #134C3B;
+  --fifth-color: #3a3a3a;
 }
 
 body {
@@ -58,7 +59,7 @@ nav ul {
 nav a {
   display: block;
   text-decoration: none;
-  color: #3a3a3a;
+  color: var(--fifth-color);
   padding: 15px;
   margin: 5px;
 }
@@ -153,4 +154,48 @@ nav a:hover {
   margin-top: 20px;
   margin-bottom: 20px;
   color: var(--third-color);
+}
+
+.geral {
+  display: flex;
+  justify-content: center;
+}
+
+.geral section {
+  flex: 2;
+}
+
+.geral aside {
+  flex: 1;
+}
+
+.widget-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.widget-title-text {
+  color: var(--fifth-color);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.widget-title-bar {
+  width: 70px;
+  height: 2px;
+  background-color: var(--main-color);
+  margin-top: 5px;
+}
+
+.house-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.house {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: var(--second-color);
 }
