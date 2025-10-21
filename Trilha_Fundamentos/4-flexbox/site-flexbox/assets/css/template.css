@@ -199,3 +199,23 @@ nav a:hover {
   margin-top: 10px;
   background-color: var(--second-color);
 }
+
+article .news-data {
+  display: flex;
+  margin-top: 10px;
+}
+
+article .news-posted-at {
+  background-color: var(--main-color);
+  color: var(--third-color);
+  font-size: 12px;
+  padding: 10px;
+  margin-right: 2px;
+}
+
+article .news-comments {
+  background-color: var(--four-color);
+  color: var(--third-color);
+  font-size: 12px;
+  padding: 10px;
+}
