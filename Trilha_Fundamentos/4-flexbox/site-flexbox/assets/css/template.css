@@ -169,6 +169,7 @@ nav a:hover {
   flex: 1;
 }
 
+
 .widget-title {
   margin-top: 30px;
   margin-bottom: 20px;
@@ -200,6 +201,21 @@ nav a:hover {
   background-color: var(--second-color);
 }
 
+article a {
+  text-decoration: none;
+}
+
+article {
+  flex: 1;
+  min-width: 200px;
+  margin-right: 25px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 article .news-data {
   display: flex;
   margin-top: 10px;
@@ -218,4 +234,29 @@ article .news-comments {
   color: var(--third-color);
   font-size: 12px;
   padding: 10px;
+}
+
+article .news-title {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: var(--fifth-color);
+  font-size: 24px;
+}
+
+article .news-image img {
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+}
+
+article .news-resume {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--fifth-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.flex {
+  display: flex;
 }
