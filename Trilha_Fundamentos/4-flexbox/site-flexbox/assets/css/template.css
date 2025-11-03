@@ -42,7 +42,6 @@ header {
 
 .menu {
   display: flex;
-  align-items: center;
 }
 
 nav ul,
@@ -260,3 +259,146 @@ article .news-resume {
 .flex {
   display: flex;
 }
+
+footer {
+  background-color: #3a3a3a;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-menu {
+  display: flex;
+  flex: 1;
+}
+
+.fm-1,
+.fm-2,
+.fm-3 {
+  flex: 1;
+  color: var(--third-color);
+  padding: 20px;
+}
+
+.fm-1 {
+  background-color: var(--main-color);
+}
+
+.fm-2 {
+  background-color: var(--second-color);
+}
+
+.fm-3 {
+  background-color: var(--four-color);
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.footer-area {
+  display: flex;
+}
+
+.footer-item {
+  flex: 1;
+}
+
+footer .widget-title-text {
+  color: var(--third-color);
+}
+
+.footer-copy {
+  border-top: #ccc 1px solid;
+  height: 40px;
+  line-height: 40px;
+  color: var(--third-color);
+  margin-top: 30px;
+}
+
+.menuMobile {
+  display: none;
+  height: 40px;
+  width: 40px;
+  margin-top: 44px;
+  margin-bottom: 44px;
+  margin-right: 24px;
+
+}
+
+.mm {
+  height: 3px;
+  background-color: var(--main-color);
+}
+
+/* start-media-query  */
+@media (max-width:600px) {
+
+  .banner-headline {
+    padding: 24px;
+  }
+
+  .banner-headline h1 {
+    font-size: 40px;
+  }
+
+  .banner-headline h2 {
+    font-size: 18px;
+  }
+
+  .banner-options {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .geral section,
+  .geral aside {
+    padding: 24px;
+  }
+
+  .footer-menu {
+    flex-direction: column;
+  }
+
+  .footer-area {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .footer-copy {
+    text-align: center;
+  }
+
+  header .container {
+    flex-direction: row;
+  }
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: var(--third-color);
+  }
+
+  header {
+    height: auto;
+  }
+
+  .logo {
+    padding-left: 24px;
+  }
+
+  .menuMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+}
+
+/* end-media-query  */

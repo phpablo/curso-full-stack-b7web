@@ -13,6 +13,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <script>
+    window.onload = function () {
+      document.querySelector('.menuMobile').addEventListener('click', function () {
+        if (document.querySelector('.menu nav ul').style.display === 'flex') {
+          document.querySelector('.menu nav ul').style.display = 'none';
+        } else {
+          document.querySelector('.menu nav ul').style.display = 'flex';
+
+        }
+      })
+    }
+  </script>
   <title>A Toca dos Potterheads - Seu portal de notícias de Harry Potter</title>
 </head>
 
@@ -23,8 +35,15 @@
       <div class="logo">
         <a href=""><img src="assets/images/logo.webp" alt="logo"></a>
       </div>
+
+
       <div class="menu">
         <nav>
+          <div class="menuMobile">
+            <div class="mm"></div>
+            <div class="mm"></div>
+            <div class="mm"></div>
+          </div>
           <ul>
             <a href="" class="active">
               <li>Notícias da Série</li>
@@ -157,10 +176,7 @@
                   <p>As plantas são elementos essenciais na preparação de poções mágicas. Desde a mandrágora, cujas
                     raízes
                     possuem propriedades curativas, até a erva-de-fogo, que é utilizada para aumentar o poder das poções
-                    de proteção, cada planta tem um papel específico. A flor de lótus, por exemplo, é conhecida por suas
-                    propriedades calmantes e é frequentemente usada em poções para aliviar ansiedade e estresse. Já a
-                    raiz de asfódelo é um ingrediente chave em poções de invisibilidade. Conhecer essas plantas e suas
-                    aplicações é fundamental para qualquer aspirante a bruxo ou bruxa.</p>
+                    de proteção, cada planta tem um papel específico. </p>
                 </div>
               </article>
               <article>
@@ -180,8 +196,7 @@
                   <p>As plantas são elementos essenciais na preparação de poções mágicas. Desde a mandrágora, cujas
                     raízes
                     possuem propriedades curativas, até a erva-de-fogo, que é utilizada para aumentar o poder das poções
-                    de proteção, cada planta tem um papel específico. A flor de lótus, por exemplo, é conhecida por suas
-                    propriedades calmantes e é frequentemente usada em poções para aliviar ansiedade e estresse</p>
+                    de proteção, cada planta tem um papel específico.</p>
                 </div>
               </article>
             </div>
@@ -239,6 +254,62 @@
     </div>
   </section>
   <!-- end-geral  -->
+  <footer>
+    <div class="container flex-column">
+      <div class="footer-menu">
+        <div class="fm-1">
+          <p>Não, disse Ron, em um tom nada convincente. Mas antes que Harry pudesse exigir ver o jornal. Draco Malfoy
+            gritou do outro lado do Salão Principal, da mesa da Sonserina.Ei, Potter! Potter!</p>
+        </div>
+        <div class="fm-2">
+          Como está sua cabeça? Você está se sentindo bem? Tem certeza de que não vai enlouquecer conosco?Malfoy também
+          estava segurando um exemplar do Profeta Diário. Os sonserinos de todos os lados da mesa estavam rindo, girando
+          em seus assentos para ver a reação de Harry.
+        </div>
+        <div class="fm-3">
+          Draco Malfoy gritou do outro lado do Salão Principal, da mesa da Sonserina.Ei, Potter! Potter! Como está sua
+          cabeça? Você está se sentindo bem? Tem certeza de que não vai enlouquecer conosco?
+        </div>
+
+      </div>
+      <div class="footer-area flex">
+
+        <div class="footer-item">
+
+          <div class="widget">
+            <div class="widget-title">
+              <div class="widget-title-text">Herbologia</div>
+              <div class="widget-title-bar"></div>
+              <div class="widget-body flex">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="widget">
+            <div class="widget-title">
+              <div class="widget-title-text">Herbologia</div>
+              <div class="widget-title-bar"></div>
+              <div class="widget-body flex">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="widget">
+            <div class="widget-title">
+              <div class="widget-title-text">Herbologia</div>
+              <div class="widget-title-bar"></div>
+              <div class="widget-body flex">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copy">
+        &copy; 2025 - A Toca dos Potterheads - Todos os direitos reservados.
+      </div>
+  </footer>
 
 </body>
 
