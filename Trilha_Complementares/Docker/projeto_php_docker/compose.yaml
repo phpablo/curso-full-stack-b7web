@@ -1,0 +1,8 @@
+services:
+  web:
+    images: meu-php
+    build: .
+    ports:
+      - "4000:80"
+    volumes:
+      - ./:/var/www/html

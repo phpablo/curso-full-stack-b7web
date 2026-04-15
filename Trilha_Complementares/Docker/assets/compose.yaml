@@ -1,0 +1,9 @@
+services:
+  app:
+    image: meu-node:v2
+    ports:
+      - "3000:3000"
+    volumes:
+      - mongo-data:/data/db
+volumes:
+  mongo-data:
